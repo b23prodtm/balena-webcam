@@ -25,10 +25,6 @@ services:
         privileged: true
         tmpfs: /dev/shm:exec
         restart: always
-        volumes:
-            - '/usr:/usr:ro'
-            - '/lib:/lib:ro'
-            - '/run/udev:/run/udev:ro'
         labels:
             io.balena.features.kernel-modules: '1'
             io.balena.features.firmware: '1'
