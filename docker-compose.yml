@@ -23,6 +23,7 @@ services:
         image: aler9/rtsp-simple-server:latest
         network_mode: host
         privileged: true
+        tty: true
         tmpfs: /dev/shm:exec
         restart: always
         labels:
