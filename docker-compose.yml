@@ -30,7 +30,7 @@ services:
             io.balena.features.kernel-modules: '1'
         environment:
             #RTSP_PATHS_CAMRPI_SOURCE: 'rpiCamera'
-            RTSP_PATHS_CAMUSB_RUN_ON_INIT: 'ffmpeg -f v4l2 -i /dev/video0 -pix_fmt yuv420p -preset ultrafast -b:v 600k -f rtsp rtsp://localhost:$RTSP_PORT/$RTSP_PATH'
+            RTSP_PATHS_CAMUSB_RUN_ON_INIT: 'ffmpeg -f v4l2 -i /dev/video0 -pix_fmt yuv420p -preset ultrafast -b:v 600k -f rtsp rtsp://localhost:8554/usbcam'
             RTSP_PATHS_CAMUSB_RUN_ON_INIT_RESTART: 'yes'
 
 
