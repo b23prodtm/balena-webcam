@@ -26,7 +26,7 @@ services:
         tty: true
         restart: always
         environment:
-            - UDEV=1
+            UDEV: 1
         devices:
             - '/dev:/dev'
         labels:
