@@ -24,14 +24,15 @@ services:
         network_mode: host
         privileged: true
         tty: true
-        tmpfs: /dev/shm:exec
         restart: always
-        volumes:
-          - 'rtsp-simple-server.yml:/rtsp-simple-server.yml'
         labels:
             io.balena.features.kernel-modules: "true"
             io.balena.features.firmware: "true"
-            io.balena.features.dbus: "true"
+        environment:
+            #RTSP_PATHS_CAMRPI_SOURCE: 'rpiCamera'
+            RTSP_PATHS_CAM_RUN_ON_INIT: 'ffmpeg -f v4l2 -i /dev/video0 -pix_fmt yuv420p -preset ultrafast -b:v 600k -f rtsp rtsp://localhost:8554/usbcam'
+            RTSP_PATHS_CAM_RUN_ON_INIT_RESTART: 'yes'
+
 
     # https://github.com/balenablocks/hostname
     hostname:
