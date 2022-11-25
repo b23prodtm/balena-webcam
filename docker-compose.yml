@@ -25,6 +25,9 @@ services:
         privileged: true
         tty: true
         restart: always
+        devices:
+          - "/dev/video0:/dev/video0:ro"
+          - "/dev/video1:/dev/video1:ro"
         labels:
             io.balena.features.kernel-modules: "true"
             io.balena.features.firmware: "true"
