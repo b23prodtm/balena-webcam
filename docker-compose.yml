@@ -25,6 +25,8 @@ services:
         privileged: true
         tty: true
         restart: always
+        environment:
+            - UDEV=1
         devices:
             - '/dev:/dev'
         labels:
