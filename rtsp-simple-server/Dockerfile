@@ -1,3 +1,3 @@
-FROM aler9/rtsp-simple-server:v0.20.2
+FROM kerberos/rtsp-simple-server:5807769
 COPY rtsp-simple-server.yml /rtsp-simple-server.yml
 ENTRYPOINT [ "/rtsp-simple-server" ]
