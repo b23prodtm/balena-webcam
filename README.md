@@ -41,4 +41,4 @@ On your router or DHCP server assign a static IP to your AdGuard Home device.
 3. Go to the configuration page and fill-in the RTSP url of your IPCamera or if using a USB or Raspberry Pi camera the proxy url as mentioned above.
 4. Press save, and the Kerberos Agent will connect to your camera.
 
-Documentation for Adguard Home can be found at https://doc.kerberos.io/
+Documentation for the Kerberos Agent and other services can be found at https://doc.kerberos.io/
