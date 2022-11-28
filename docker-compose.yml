@@ -7,7 +7,7 @@ volumes:
 
 services:
 
-    # https://hub.docker.com/r/kerberos/agent
+    # https://github.com/kerberos/agent
     agent:
         image: kerberos/agent:3ce9adc
         network_mode: host
@@ -18,7 +18,7 @@ services:
             - 'kerberosagent_snapshots:/home/agent/data/snapshots:rw'
             - 'kerberosagent_config:/home/agent/data/config:rw'
 
-    # https://github.com/aler9/rtsp-simple-server
+    # https://github.com/kerberos/rtsp-simple-server
     rtsp-simple-server:
         build: ./rtsp-simple-server
         network_mode: host
