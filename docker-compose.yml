@@ -25,14 +25,6 @@ services:
         privileged: true
         tty: true
         restart: always
-        environment:
-            UDEV: 1
-        devices:
-            - '/dev:/dev'
-        labels:
-            io.balena.features.kernel-modules: 1
-            io.balena.features.firmware: 1
-            io.balena.features.dbus: 1
 
     # https://github.com/balenablocks/hostname
     hostname:
