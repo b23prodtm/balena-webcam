@@ -23,7 +23,6 @@ services:
         build: ./rtsp-simple-server
         network_mode: host
         privileged: true
-        tty: true
         restart: always
 
     # https://github.com/balenablocks/hostname
