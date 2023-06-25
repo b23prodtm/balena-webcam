@@ -26,7 +26,7 @@ data:
     - genericx86-64-ext
 post-provisioning: >-
 
-  The `video-surveillance` application is a collection of `blocks` and other third-party containers to create a state-of-the-art video surveillance system. At the foundation of this `app` is Kerberos.io, which is a cutting edge modular video surveillance system, made available as Open Source under the MIT License, with a strong focus on user experience, scalability, resilience, extension and integration. The idea of this `app` is to include more blocks over-time to improve and include new functionalities.
+  The video-surveillance application is a collection of blocks and other third-party containers to create a state-of-the-art video surveillance system. At the foundation of this app is Kerberos.io, which is a cutting edge modular video surveillance system, made available as Open Source under the MIT License, with a strong focus on user experience, scalability, resilience, extension and integration. The idea of this app is to include more blocks over-time to improve and include new functionalities.
   
   # How it works: A world of Agents 🕵🏼‍♂️
 
@@ -34,24 +34,38 @@ post-provisioning: >-
 
   If you are looking for a solution that scales better with your video surveillance and/or video analytics requirements, [Kerberos Enterprise Suite might be a better fit](https://doc.kerberos.io/enterprise/first-things-first).
 
-  ### The most important features
+  # The most important features
 
   - Low memory and CPU usage.
+
   - Simplified and modern user interface.
+
   - Multi architecture (ARMv7, ARMv8, amd64, etc).
+
   - Multi camera support: IP Cameras (H264), USB cameras and Raspberry Pi Cameras [through a RTSP proxy](https://github.com/kerberos-io/camera-to-rtsp).
+
   - Single camera per instance (e.g. one container per camera).
+
   - Primary and secondary stream setup (record full-res, stream low-res).
+
   - Low resolution streaming through MQTT and full resolution streaming through WebRTC.
+
   - Ability to specifiy conditions: offline mode, motion region, time table, continuous recording, etc.
+
   - Post- and pre-recording on motion detection.
+
   - Ability to create fragmented recordings, and streaming though HLS fMP4.
-  - [Deploy where you want](https://github.com/kerberos-io/agent#how-to-run-and-deploy-a-kerberos-agent) with the tools you use: `docker`, `docker compose`, `ansible`, `terraform`, `kubernetes`, `balena`, etc.
+
+  - Deploy where you want with the tools you use: docker, docker compose, ansible, terraform, kubernetes, balena, etc.
+
   - Cloud storage/persistance: Kerberos Hub, Kerberos Vault and Dropbox. [(WIP: Minio, Storj, Google Drive, FTP etc.)](https://github.com/kerberos-io/agent/issues/95)
+
   - WIP: Integrations (Webhooks, MQTT, Script, etc).
+
   - REST API access and documentation through Swagger (trigger recording, update configuration, etc).
+  
   - MIT License
 
   ### How to run this app
 
-  Simple click on the `Deploy` button, and create or use an existing `fleet`. Once done you can download the `video-surveillance` Balena Cloud base image and `flash it` to your device.
+  Simple click on the Deploy button, and create or use an existing fleet. Once done you can download the video-surveillance Balena Cloud base image and flash it to your device.
