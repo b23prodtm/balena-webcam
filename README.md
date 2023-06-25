@@ -29,11 +29,9 @@ Application environment variables apply to all services within the application, 
 
 Once your device joins the fleet you'll need to allow some time for it to download the application.
 
-On your router or DHCP server assign a static IP to your AdGuard Home device.
-
 1. Connect to `http://YOUR-DEVICE-IP` or depending on the hostname `http://videosurveillance.local` in your browser
-2. Sign-in with the default username and password `root`, `root`.
-3. Go to the configuration page and fill-in the RTSP url of your IPCamera or if using a USB or Raspberry Pi camera the proxy url as mentioned above.
-4. Press save, and the Kerberos Agent will connect to your camera.
+2. Sign-in with the default username `root`and password `root` or [change using the environment variables](https://github.com/kerberos-io/agent/tree/master#configure-with-environment-variables).
+3. Go to the configuration page and fill-in the RTSP url of your IPCamera.
+4. Press save, and the Kerberos Agent will connect to your camera, and show a live view on the dashboard page.
 
 Documentation for the Kerberos Agent and other services can be found at [`https://doc.kerberos.io/`](https://doc.kerberos.io/)
