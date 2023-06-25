@@ -1,9 +1,29 @@
-name: Kerberos Agent
-type: sw.application
+name: agent
 description: >-
   Kerberos Agent is a cutting edge video surveillance management system 
   made available as Open Source under the MIT License
-version: 1.0.0-beta
+version: 3.0.0
+type: sw.block
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/kerberos-io/agent'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/kerberos-io/balena-agent/master/logo.png
+data:
+  defaultDeviceType: raspberrypi3
+  supportedDeviceTypes:
+    - raspberrypi4-64
+    - fincm3
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi400-64
+    - intel-nuc
+    - genericx86-64-ext
 post-provisioning: >-
 
   ## Introduction
@@ -36,28 +56,3 @@ post-provisioning: >-
   Kerberos.io applies the concept of agents. An agent is running next to or on your camera, and is processing a single camera feed. It applies motion based recording and make those recordings available through a user friendly web interface. Kerberos Agent allows you to connect to other cloud services or custom applications. Kerberos Agent is perfect for personal usage and/or is a great tool if you only have a couple of surveillance cameras to be processed.
 
   If you are looking for a solution that scales better with your video surveillance and/or video analytics requirements, [Kerberos Enterprise Suite might be a better fit](https://doc.kerberos.io/enterprise/first-things-first).
-
-assets:
-  repository:
-    type: blob.asset
-    data:
-      url: 'https://github.com/kerberos-io/agent'
-  logo:
-    type: blob.asset
-    data:
-      url: >-
-        https://raw.githubusercontent.com/kerberos-io/balena-agent/master/logo.png
-data:
-  applicationEnvironmentVariables:
-  defaultDeviceType: "raspberrypi3"
-  supportedDeviceTypes:
-    - "raspberrypi2"
-    - "raspberrypi3"
-    - "raspberrypi3-64"
-    - "raspberrypi4-64"
-    - "raspberrypi400-64"
-    - "raspberrypi0-2w-64"
-    - "orange-pi-one"
-    - "intel-nuc"
-    - "fincm3"
-    - "jetson-nano"
