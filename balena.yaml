@@ -15,15 +15,36 @@ assets:
       url: >-
         https://raw.githubusercontent.com/kerberos-io/balena-agent/master/logo.png
 data:
+  applicationEnvironmentVariables:
+    - AGENT_MODE: "release"
+    - AGENT_USERNAME: "root"
+    - AGENT_PASSWORD: "root"
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
-    - raspberrypi4-64
     - fincm3
+    - orange-pi-one
+    - orangepi-plus2
+    - orange-pi-zero
+    - beagleboard-xm
+    - beaglebone-black
+    - beaglebone-green
+    - beaglebone-green-wifi
+    - raspberry-pi
+    - raspberry-pi2
     - raspberrypi3
     - raspberrypi3-64
+    - raspberrypi-4
+    - raspberrypi4-64
     - raspberrypi400-64
     - intel-nuc
     - genericx86-64-ext
+    - generic-aarch64
+    - jetson-nano
+    - jetson-nano-emmc
+    - jetson-tx1
+    - jetson-tx2
+    - jetson-xavier
+    - jetson-xavier-nx-devkit
 post-provisioning: >-
 
   The video-surveillance application is a collection of blocks and other third-party containers to create a state-of-the-art video surveillance system. At the foundation of this app is Kerberos.io, which is a cutting edge modular video surveillance system, made available as Open Source under the MIT License, with a strong focus on user experience, scalability, resilience, extension and integration. The idea of this app is to include more blocks over-time to improve and include new functionalities.
