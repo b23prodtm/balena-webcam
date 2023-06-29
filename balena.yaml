@@ -47,15 +47,15 @@ data:
     - jetson-xavier-nx-devkit
 post-provisioning: >-
 
-  The video-surveillance application is a collection of blocks and other third-party containers to create a state-of-the-art video surveillance system. At the foundation of this app is Kerberos.io, which is a cutting edge modular video surveillance system, made available as Open Source under the MIT License, with a strong focus on user experience, scalability, resilience, extension and integration. The idea of this app is to include more blocks over-time to improve and include new functionalities.
+  The video-surveillance application is a collection of blocks and other third-party containers to create a state-of-the-art video surveillance system. At the foundation of this app is the [Kerberos.io Agent](https://github.com/kerberos-io/agent), which is a cutting edge modular video surveillance system, made available as Open Source under the MIT License, with a strong focus on user experience, scalability, resilience, extension and integration. The idea of this app is to include more blocks over-time to improve and include new functionalities.
   
-  # How it works: A world of Agents 🕵🏼‍♂️
+  # At the core: Kerberos Agent
 
   Kerberos.io applies the concept of agents. An agent is running next to or on your camera, and is processing a single camera feed. It applies motion based recording and make those recordings available through a user friendly web interface. Kerberos Agent allows you to connect to other cloud services or custom applications. Kerberos Agent is perfect for personal usage and/or is a great tool if you only have a couple of surveillance cameras to be processed.
 
   If you are looking for a solution that scales better with your video surveillance and/or video analytics requirements, [Kerberos Enterprise Suite might be a better fit](https://doc.kerberos.io/enterprise/first-things-first).
 
-  # The most important features
+  ## The most important features
 
   - Low memory and CPU usage.
 
