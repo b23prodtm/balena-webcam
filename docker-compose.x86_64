@@ -1,49 +1,43 @@
-version: '2.1'
-
-volumes:
-    kerberosagent_recordings:
-    kerberosagent_snapshots:
-    kerberosagent_config:
-    /run/udev:
-    mediamtx.yml:
-
+version: '2'
 services:
-
-    # https://github.com/kerberos/agent
-    agent:
-        image: bh.cr/kerberos_io/agent
-        network_mode: host
-        tty: true
-        restart: always
-        volumes:
-            - 'kerberosagent_recordings:/home/agent/data/recordings:rw'
-            - 'kerberosagent_snapshots:/home/agent/data/snapshots:rw'
-            - 'kerberosagent_config:/home/agent/data/config:rw'
-
-    # https://github.com/balenablocks/hostname
-    hostname:
-        image: balenablocks/hostname:latest
-        restart: no
-        labels:
-            io.balena.features.supervisor-api: 1
-        environment:
-            SET_HOSTNAME: videosurveillance
-
-    mediamtx-rtsp:
-        image: bluenviron/mediamtx:latest-ffmpeg-rpi
-        restart: always
-        network_mode: host
-        ports:
-            - 8554:8554
-            - 1935:1935
-            - 8888:8888
-            - 8889:8889
-            - 8890:8890
-            - 8189:8189
-        privileged: true
-        volumes:
-            - /run/udev:/run/udev:ro
-            - mediamtx.yml:/mediamtx.yml
-        environment:
-            MTX_PROTOCOLS=tcp
-            MTX_WEBRTCADDITIONALHOSTS=videosurveillance            
+  agent: # https://github.com/kerberos/agent
+    image: bh.cr/kerberos_io/agent
+    network_mode: host
+    tty: true
+    restart: always
+    volumes:
+      - "kerberosagent_recordings:/home/agent/data/recordings"
+      - "kerberosagent_snapshots:/home/agent/data/snapshots"
+      - "kerberosagent_config:/home/agent/data/config"
+  hostname: # https://github.com/balenablocks/hostname
+    image: balenablocks/hostname:latest
+    restart: no
+    labels:
+      io.balena.features.supervisor-api: 1
+    environment:
+      - SET_HOSTNAME=videosurveillance
+  mediamtx-rtsp:
+    image: bluenviron/mediamtx:latest-ffmpeg
+    restart: always
+    network_mode: host
+    ports:
+      - 8554:8554
+      - 1935:1935
+      - 8888:8888
+      - 8889:8889
+      - 8890:8890
+      - 8189:8189
+    privileged: true
+    user: root
+    environment:
+      - UDEV=on
+      - TARGETPLATFORM=linux/amd64
+      - MTX_PROTOCOLS=tcp
+      - MTX_WEBRTCADDITIONALHOSTS=videosurveillance
+    volumes:
+      - "mediamtx.yml:/mediamtx.yml"
+volumes:
+  kerberosagent_recordings:
+  kerberosagent_snapshots:
+  kerberosagent_config:
+  mediamtx.yml:

@@ -1,7 +1,6 @@
 version: '2'
 services:
-  # https://github.com/kerberos/agent
-  agent:
+  agent: # https://github.com/kerberos/agent
     image: bh.cr/kerberos_io/agent
     network_mode: host
     tty: true
@@ -10,8 +9,7 @@ services:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
       - "kerberosagent_config:/home/agent/data/config"
-  # https://github.com/balenablocks/hostname
-  hostname:
+  hostname: # https://github.com/balenablocks/hostname
     image: balenablocks/hostname:latest
     restart: no
     labels:
@@ -19,7 +17,7 @@ services:
     environment:
       - SET_HOSTNAME=videosurveillance
   mediamtx-rtsp:
-    image: bluenviron/mediamtx:latest-ffmpeg-rpi
+    image: bluenviron/mediamtx:latest-ffmpeg
     restart: always
     network_mode: host
     ports:
@@ -30,15 +28,16 @@ services:
       - 8890:8890
       - 8189:8189
     privileged: true
+    user: root
     environment:
+      - UDEV=on
+      - TARGETPLATFORM=%%TARGETPLATFORM%%
       - MTX_PROTOCOLS=tcp
       - MTX_WEBRTCADDITIONALHOSTS=videosurveillance
     volumes:
-      - "/run/udev:/run/udev:ro"
       - "mediamtx.yml:/mediamtx.yml"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-  /run/udev:
-  mediamtx:
+  mediamtx.yml:
