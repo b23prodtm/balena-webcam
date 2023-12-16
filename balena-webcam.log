@@ -1,0 +1,2006 @@
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 3
+* docker
+* Allow cross-build
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+[main d08f20b] aarch64 pushed
+ 1 file changed, 41 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 3
+* docker
+* Allow cross-build
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+[main f37d128] aarch64 pushed
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 3
+* docker
+* Allow cross-build
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.template
+	../../../Dockerfile.template.sed
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64.sed
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.template
+	Dockerfile.template.sed
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64.sed
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 --local
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.template
+	../../../Dockerfile.template.sed
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64.sed
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.template
+	Dockerfile.template.sed
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64.sed
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 --local
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 271f73c] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 49 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.template
+	Dockerfile.template.sed
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 1
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 1eb1ba8] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 49 insertions(+)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.template
+	Dockerfile.template.sed
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/armhf.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy armhf 1
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/armhf.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.template
+	../../../Dockerfile.template.sed
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/armhf.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template
+	Dockerfile.template.sed
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf.sed
+	docker-compose.template
+	docker-compose.template.sed
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy armhf 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy armhf 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/x86_64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy x86_64 1
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/x86_64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template
+	../../../Dockerfile.template.sed
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64.sed
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/x86_64.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64.sed
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy x86_64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy x86_64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/x86_64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy x86_64 1
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/x86_64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/x86_64.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy x86_64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy x86_64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/armhf.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy armhf 1
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/armhf.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/armhf.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy armhf 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy armhf 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 1
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 8c9fca1] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 --debug
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 3
+* docker
+* Allow cross-build
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 3
+* docker
+* Allow cross-build
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main e67d7a0] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 3
+* docker
+* Allow cross-build
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 0818c2f] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 3 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 3 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 3 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 3 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 3 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 3 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../../.env
+	../../../Dockerfile.aarch64
+	../../../Dockerfile.aarch64.sed
+	../../../Dockerfile.aarch64.x.old
+	../../../Dockerfile.armhf
+	../../../Dockerfile.armhf.sed
+	../../../Dockerfile.armhf.x.old
+	../../../Dockerfile.template.sed
+	../../../Dockerfile.x86_64
+	../../../Dockerfile.x86_64.sed
+	../../../Dockerfile.x86_64.x.old
+	../../../aarch64.env
+	../../../armhf.env
+	../../../balena-webcam.log
+	../../../common.env
+	../../../deploy.sh
+	../../
+	../../../docker-compose.aarch64
+	../../../docker-compose.aarch64.sed
+	../../../docker-compose.aarch64.x.old
+	../../../docker-compose.armhf
+	../../../docker-compose.armhf.sed
+	../../../docker-compose.armhf.x.old
+	../../../docker-compose.template
+	../../../docker-compose.template.sed
+	../../../docker-compose.x86_64
+	../../../docker-compose.x86_64.sed
+	../../../docker-compose.x86_64.x.old
+	../../../x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 3 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main f7d2d5d] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 4 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 0341e62] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 38 insertions(+), 43 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 5 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main b748de9] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 57 insertions(+), 12 deletions(-)
+ create mode 100644 docker-compose.template
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 6 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 9aa03ec] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 7 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main cc8a839] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 8 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 8552fec] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 9 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main bc80400] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 10 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 040890e] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 8 insertions(+), 10 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 11 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 47515cc] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 12 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
+/Users/wwb23tifo/Open Source/balena-webcam/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+* Found 1 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main 4d49b55] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 2 insertions(+), 38 deletions(-)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 13 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.env
+	Dockerfile.aarch64
+	Dockerfile.aarch64.sed
+	Dockerfile.aarch64.x.old
+	Dockerfile.armhf
+	Dockerfile.armhf.sed
+	Dockerfile.armhf.x.old
+	Dockerfile.template.sed
+	Dockerfile.x86_64
+	Dockerfile.x86_64.sed
+	Dockerfile.x86_64.x.old
+	aarch64.env
+	armhf.env
+	balena-webcam.log
+	common.env
+	deploy.sh
+	deployment/
+	docker-compose.aarch64
+	docker-compose.aarch64.sed
+	docker-compose.aarch64.x.old
+	docker-compose.armhf
+	docker-compose.armhf.sed
+	docker-compose.armhf.x.old
+	docker-compose.template.sed
+	docker-compose.x86_64
+	docker-compose.x86_64.sed
+	docker-compose.x86_64.x.old
+	x86_64.env
+
+nothing added to commit but untracked files present (use "git add" to track)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...

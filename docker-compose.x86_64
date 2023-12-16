@@ -1,5 +1,14 @@
-version: '2'
+version: '2.1'
+
+volumes:
+    kerberosagent_recordings:
+    kerberosagent_snapshots:
+    kerberosagent_config:
+    /run/udev:
+    mediamtx.yml:
+
 services:
+
     # https://github.com/kerberos/agent
     agent:
         image: bh.cr/kerberos_io/agent
@@ -7,9 +16,9 @@ services:
         tty: true
         restart: always
         volumes:
-            - 'kerberosagent_recordings:/home/agent/data/recordings'
-            - 'kerberosagent_snapshots:/home/agent/data/snapshots'
-            - 'kerberosagent_config:/home/agent/data/config'
+            - 'kerberosagent_recordings:/home/agent/data/recordings:rw'
+            - 'kerberosagent_snapshots:/home/agent/data/snapshots:rw'
+            - 'kerberosagent_config:/home/agent/data/config:rw'
 
     # https://github.com/balenablocks/hostname
     hostname:
@@ -34,7 +43,7 @@ services:
         privileged: true
         volumes:
             - /run/udev:/run/udev:ro
-            - ./mediamtx.yml:/mediamtx.yml
+            - mediamtx.yml:/mediamtx.yml
         environment:
-            - MTX_PROTOCOLS=tcp
-            - MTX_WEBRTCADDITIONALHOSTS=videosurveillance
+            MTX_PROTOCOLS=tcp
+            MTX_WEBRTCADDITIONALHOSTS=videosurveillance            
