@@ -2609,3 +2609,6 @@ Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
 + RUN [^a-z]*cross-build-end[^a-z]*
 /Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/x86_64.env
 /Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main f86d8ac] x86_64 pushed ./deployment/images/node-php7
+ 3 files changed, 10 insertions(+), 2 deletions(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/x86_64.env
