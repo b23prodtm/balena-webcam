@@ -2314,3 +2314,177 @@ Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
 + RUN [^a-z]*cross-build-start[^a-z]*
 /Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/armhf.env
 /Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+/Users/wwb23tifo/Open Source/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/Open Source/balena-webcam/common.env
+[main a5ab9ae] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 5 insertions(+)
+/Users/wwb23tifo/Open Source/balena-webcam/./.env -> /Users/wwb23tifo/Open Source/balena-webcam/aarch64.env
+[main 3da43d4] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+/Users/wwb23tifo/OpenSource/balena-webcam/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+* Found 2 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 0adb9ab] aarch64 pushed ./deployment/images/node-php7
+ 4 files changed, 15 insertions(+), 3 deletions(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main b08fc1f] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 576f901] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 21 insertions(+), 8 deletions(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main 9ed18ef] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 5504c19] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 5 insertions(+)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main ef493fb] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 4
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main d236923] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 5 insertions(+)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main 00a23b2] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 4
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 1f49c60] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 9 insertions(+)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main 48b4fcf] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 23c5aec] aarch64 pushed ./deployment/images/node-php7
+ 1 file changed, 9 insertions(+)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main ec7f87e] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 81aeed9] aarch64 pushed ./deployment/images/node-php7
+ 4 files changed, 22 insertions(+), 3 deletions(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main 44e3ae1] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main de25a2d] aarch64 pushed ./deployment/images/node-php7
+ 4 files changed, 14 insertions(+), 3 deletions(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main 54b6491] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 8481c87] aarch64 pushed ./deployment/images/node-php7
+ 4 files changed, 14 insertions(+), 4 deletions(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main baea65b] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 5502e93] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 14 insertions(+), 3 deletions(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main bbd196f] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 2bcee37] aarch64 pushed ./deployment/images/node-php7
+ 2 files changed, 11 insertions(+)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main 3921d46] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 5eb974c] aarch64 pushed ./deployment/images/node-php7
+ 4 files changed, 13 insertions(+), 2 deletions(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main 18e080e] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 4
++ RUN [^a-z]*cross-build-start[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
+[main 64b07a6] aarch64 pushed ./deployment/images/node-php7
+ 3 files changed, 12 insertions(+), 1 deletion(-)
+/Users/wwb23tifo/OpenSource/balena-webcam/./.env -> /Users/wwb23tifo/OpenSource/balena-webcam/aarch64.env
+[main 829f0d0] aarch64 pushed
+ 1 file changed, 3 insertions(+)
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
