@@ -2601,3 +2601,11 @@ Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
 Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
 * /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
 * deploy's exiting...
+/Users/wwb23tifo/OpenSource/balena-webcam/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/x86_64.env
+* Found 2 flags set BALENA_PROJECTS_FLAGS
+* Found 2 projects set BALENA_PROJECTS
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v20.10.0/bin/balena_deploy x86_64 2
++ RUN [^a-z]*cross-build-end[^a-z]*
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/.env -> /Users/wwb23tifo/OpenSource/balena-webcam/x86_64.env
+/Users/wwb23tifo/OpenSource/balena-webcam/./deployment/images/node-php7/common.env -> /Users/wwb23tifo/OpenSource/balena-webcam/common.env
