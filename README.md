@@ -1,4 +1,4 @@
-# Video-surveillance by Balena Hub
+# Video-surveillance by Balena Hub [![CircleCI](https://dl.circleci.com/status-badge/img/gh/b23prodtm/balena-webcam/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/b23prodtm/balena-webcam/tree/main)
 
 If you're looking for a seamless, easy and innovative video surveillance system for your property, than this is the project you've been waiting for. We've created an app [`video-surveillance` on Balena Hub](https://hub.balena.io/apps/2064752/video-surveillance), that helps you deploying a video surveillance system on the hardware you prefer, with all the benefits you expect from a modern IoT system nowadays. The project is relying on the popular [Kerberos Agent](https://github.com/kerberos-io/agent), added with some additional useful Balena blocks.
 
@@ -22,7 +22,7 @@ Application environment variables apply to all services within the application, 
 | `SET_HOSTNAME` | Set a custom hostname on application start. Default is `videosurveillance`. |
 
 ### RSTP server
-Kerberos Agent doesn't include the [USB webcam support](https://github.com/bluenviron/mediamtx?tab=readme-ov-file#generic-webcam) 
+Kerberos Agent doesn't include the [USB webcam support](https://github.com/bluenviron/mediamtx?tab=readme-ov-file#generic-webcam)
 Currently only H264 RTSP streams are supported from mediamtx sidecar container
 
 ## Usage
@@ -36,7 +36,7 @@ After npm install succeeded, HuewizPi can be dbuilt and optionally deployed to t
 
 ### Update BALENA_ARCH dependent files
 
-When you make changes to `docker*.template` files and environment `*.env` files, you can apply changes that the CPU architecture depends on. To do so, run 
+When you make changes to `docker*.template` files and environment `*.env` files, you can apply changes that the CPU architecture depends on. To do so, run
 deployment scripts `balena_deploy --nobuild` before to push packages:
 ``` Updates armhf files
 ./deploy.sh 1 --local [CTRL+C]
