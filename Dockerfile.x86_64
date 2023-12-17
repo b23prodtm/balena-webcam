@@ -1,8 +1,8 @@
-# THIS file was generated for $DKR_ARCH intel-nuc
+# THIS file was generated for $BALENA_ARCH intel-nuc
 # Make changes to the Dockerfile.x86_64
 # Docker architecture (x86_64, armhf, aarch64 )
 ARG IMG_TAG
-ARG DKR_ARCH
+ARG BALENA_ARCH
 ARG PRIMARY_HUB
 ARG TARGETPLATFORM
 ARG MTX_PROTOCOLS
@@ -16,7 +16,7 @@ ENV UDEV on
 
 # ----------------------
 # About Dockerfile ARGS:
-# ALL the following ARGS are DUPLICATED in common.env and $DKR_ARCH.env
+# ALL the following ARGS are DUPLICATED in common.env and $BALENA_ARCH.env
 # and Scripts/fooargs.sh for development phase.
 # If not set in common.env, it must be set in the host machine environment
 # when ./start.sh or ./test.sh or in development phase.

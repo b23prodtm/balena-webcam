@@ -555,10 +555,9 @@ paths:
   # example:
   # my_camera:
   #   source: rtsp://my_camera
-
-  # Settings under path "all_others" are applied to all paths that
-  # do not match another entry.
-  all_others:
   usbcam:
     runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://localhost:$RTSP_PORT/$RTSP_PATH
     runOnInitRestart: yes
+  # Settings under path "all_others" are applied to all paths that
+  # do not match another entry.
+  all_others:
