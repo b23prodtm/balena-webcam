@@ -8,12 +8,15 @@ ARG TARGETPLATFORM
 ARG MTX_PROTOCOLS
 ARG MTX_WEBRTCADDITIONALHOSTS
 
-# Primary image is a Linux PHP with Apache 2 server pre-installed
-FROM ${PRIMARY_HUB:-bluenviron/mediamtx}:${IMG_TAG:-latest-ffmpeg}
-
 ENV INITSYSTEM off
 ENV UDEV on
 
+# Primary image is a Linux PHP with Apache 2 server pre-installed
+FROM bluenviron/mediamtx:${IMG_TAG:-latest-ffmpeg}
+
+FROM ${PRIMARY_HUB:-balenalib/intel-nuc:build}:latest-${BALENA_ARCH:-x86_64} AS primary
+
+COPY --from=primary /usr/bin/entry.sh /usr/bin/entry.sh
 # ----------------------
 # About Dockerfile ARGS:
 # ALL the following ARGS are DUPLICATED in common.env and $BALENA_ARCH.env
@@ -24,4 +27,6 @@ ENV UDEV on
 #                        Values in default (no-arg) production mode
 #                        May be overriden in docker-compose.yml
 #-----------------------
-ENTRYPOINT ["/mediamtx"]
+
+RUN ffmpeg -list_devices true -f dshow -i dummy || true
+ENTRYPOINT ["/usr/bin/entry.sh && /mediamtx"]

@@ -12,10 +12,9 @@ ENV INITSYSTEM off
 ENV UDEV on
 
 # Primary image is a Linux PHP with Apache 2 server pre-installed
-FROM ${PRIMARY_HUB:-balenalib/%%BALENA_MACHINE_NAME%%:build}:latest-${BALENA_ARCH:-%%BALENA_ARCH%%} AS primary
-
-# Primary image is a Linux PHP with Apache 2 server pre-installed
 FROM bluenviron/mediamtx:${IMG_TAG:-latest-ffmpeg}
+
+FROM ${PRIMARY_HUB:-balenalib/%%BALENA_MACHINE_NAME%%:build}:latest-${BALENA_ARCH:-%%BALENA_ARCH%%} AS primary
 
 COPY --from=primary /usr/bin/entry.sh /usr/bin/entry.sh
 # ----------------------
