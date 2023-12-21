@@ -2828,3 +2828,6 @@ Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
  1 file changed, 3 insertions(+)
 Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
 * /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 
+Identity added: /Users/wwb23tifo/.ssh/id_rsa (wwwb23prodtminfo@iMac.local)
+* /Users/wwb23tifo/.nvm/versions/node/v19.9.0/bin/balena_deploy aarch64 0
+* deploy's exiting...
