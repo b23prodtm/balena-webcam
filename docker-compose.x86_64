@@ -4,9 +4,9 @@ services:
     image: kerberos/agent
     network_mode: host
     tty: true
-    restart: always
+    restart: true
     environment:
-      UDEV: on
+      UDEV: 1
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
@@ -30,7 +30,7 @@ services:
       args:
         TARGETPLATFORM: linux/amd64
     image: betothreeprod/mediamtx
-    restart: always
+    restart: true
     network_mode: host
     ports:
       - 8554:8554
@@ -42,10 +42,10 @@ services:
     privileged: true
     user: root
     environment:
-      UDEV: on
+      UDEV: 1
       TARGETPLATFORM: linux/amd64
       MTX_PROTOCOLS: tcp
-      MTX_WEBRTCADDITIONALHOSTS: videosurveillance
+      MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
       RTSP_PORT: 8554
       MTX_PATH: usbcam
     volumes:
