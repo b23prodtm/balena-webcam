@@ -54,10 +54,10 @@ jobs:
     - checkout
     - attach_workspace:
         at: app
-    - restore_cache:
-        keys:
-          - v1-dependencies-{{ checksum "package-lock.json" }}
-          - v1-dependencies-{{ checksum "composer.lock" }}
+    #- restore_cache:
+        #keys:
+          #- v1-dependencies-{{ checksum "package-lock.json" }}
+          #- v1-dependencies-{{ checksum "composer.lock" }}
     - setup_remote_docker:
         docker_layer_caching: false
     - *deps
