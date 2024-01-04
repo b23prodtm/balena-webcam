@@ -5,7 +5,7 @@ services:
     network_mode: host
     tty: true
     restart: "always"
-    environmena:
+    environment:
       UDEV: 1
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
