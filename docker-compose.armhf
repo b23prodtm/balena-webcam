@@ -4,38 +4,37 @@ services:
     image: bh.cr/kerberos_io/agent
     network_mode: host
     tty: true
-    restart: always
+    restart: "always"
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
       - "kerberosagent_config:/home/agent/data/config"
   hostname: # https://github.com/balenablocks/hostname
     image: balenablocks/hostname:latest
-    restart: no
+    restart: "no"
     labels:
       io.balena.features.supervisor-api: 1
     environment:
       - SET_HOSTNAME=videosurveillance
   mediamtx-rtsp:
-    image: bluenviron/mediamtx:latest-ffmpeg
-    restart: always
+    image: kerberos/rtsp-simple-server:latest-rpi
+    restart: "always"
     network_mode: host
     ports:
       - 8554:8554
-      - 1935:1935
-      - 8888:8888
-      - 8889:8889
-      - 8890:8890
-      - 8189:8189
     privileged: true
     user: root
     environment:
-      - UDEV=on
-      - TARGETPLATFORM=linux/arm/v7
-      - MTX_PROTOCOLS=tcp
-      - MTX_WEBRTCADDITIONALHOSTS=videosurveillance
+      UDEV: 1
+      TARGETPLATFORM: linux/arm/v7
+      MTX_PROTOCOLS: tcp
+      MTX_WEBRTCADDITIONALHOSTS: videosurveillance
+      RTSP_PORT: 8554
+      MTX_PATH: usbcam
     volumes:
       - "mediamtx.yml:/mediamtx.yml"
+    tmpfs:
+      - "/dev/shm:exec"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
