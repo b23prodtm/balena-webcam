@@ -24,28 +24,18 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   mediamtx-rtsp:
-    build:
-      context: .
-      dockerfile: Dockerfile.x86_64
-      args:
-        TARGETPLATFORM: linux/amd64
-    image: betothreeprod/mediamtx
+    image: kerberos/rtsp-simple-server:latest
     restart: "always"
     network_mode: host
     ports:
       - 8554:8554
-      - 1935:1935
-      - 8888:8888
-      - 8889:8889
-      - 8890:8890/udp
-      - 8189:8189/udp
     privileged: true
     user: root
     environment:
       UDEV: 1
       TARGETPLATFORM: linux/amd64
       MTX_PROTOCOLS: tcp
-      MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
+      MTX_WEBRTCADDITIONALHOSTS: videosurveillance
       RTSP_PORT: 8554
       MTX_PATH: usbcam
     volumes:
