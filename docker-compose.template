@@ -4,16 +4,16 @@ services:
     image: kerberos/agent
     network_mode: host
     tty: true
-    restart: always
+    restart: "always"
     environment:
-      UDEV: on
+      UDEV: 1
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
       - "kerberosagent_config:/home/agent/data/config"
   hostname: # https://github.com/balenablocks/hostname
     image: balenablocks/hostname:latest
-    restart: no
+    restart: "no"
     labels:
       io.balena.features.kernel-modules: '1'
       io.balena.features.firmware: '1'
@@ -24,25 +24,15 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   mediamtx-rtsp:
-    build:
-      context: .
-      dockerfile: Dockerfile.%%BALENA_ARCH%%
-      args:
-        TARGETPLATFORM: %%TARGETPLATFORM%%
-    image: betothreeprod/mediamtx
-    restart: always
+    image: kerberos/rtsp-simple-server:%%IMG_TAG%%
+    restart: "always"
     network_mode: host
     ports:
       - 8554:8554
-      - 1935:1935
-      - 8888:8888
-      - 8889:8889
-      - 8890:8890/udp
-      - 8189:8189/udp
     privileged: true
     user: root
     environment:
-      UDEV: on
+      UDEV: 1
       TARGETPLATFORM: %%TARGETPLATFORM%%
       MTX_PROTOCOLS: tcp
       MTX_WEBRTCADDITIONALHOSTS: videosurveillance
