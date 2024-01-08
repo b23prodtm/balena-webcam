@@ -32,11 +32,11 @@ services:
       RTSP_PORT: 8554
       MTX_PATH: usbcam
     volumes:
-      - "mediamtx.yml:/mediamtx.yml"
+      - "rtsp-simple-server.yml:/rtsp-simple-server.yml"
     tmpfs:
       - "/dev/shm:exec"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-  mediamtx.yml:
+  rtsp-simple-server.yml:
