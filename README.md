@@ -1,6 +1,6 @@
 # Video-surveillance by Balena Hub [![CircleCI](https://dl.circleci.com/status-badge/img/gh/b23prodtm/asecuritywebcam/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/b23prodtm/asecuritywebcam/tree/main)
 
-If you're looking for a seamless, easy and innovative video surveillance system for your property, than this is the project you've been waiting for. We've created an app, that helps you deploying a video surveillance system on the hardware you prefer, with all the benefits you expect from a modern IoT system nowadays. The project is relying on the popular [Kerberos Agent](https://github.com/kerberos-io/agent), added with some additional useful Balena blocks.
+If you're looking for a seamless, easy and innovative video surveillance system for your property, than this is the project you've been waiting for. We've created an app, that helps you deploying a video surveillance system on the hardware you prefer, with all the benefits you expect from a modern IoT system nowadays. The project is relying on the popular [Kerberos Agent](https://github.com/kerberos-io/agent), added with some additional [RTSP proxy](https://github.com/kerberos-io/camera-to-rtsp).
 
 The idea of this project is to build and advance a video surveillance system with multiple Balena blocks and/or third-party containers, that make up the defacto video surveillance system anyone can use. The existing application is using following blocks:
 
