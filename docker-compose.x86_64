@@ -53,7 +53,7 @@ services:
       RTSP_PORT: 8554
       MTX_PATH: usbcam
     volumes:
-      - "rtsp-simple-server.yml:/rtsp-simple-server.yml"
+      - "rtsp-simple-server.yml:/mediamtx.yml"
     tmpfs:
       - "/dev/shm:exec"
 volumes:
