@@ -46,4 +46,4 @@ volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-  rtsp-simple-servers.yml:
+  rtsp-simple-server.yml:
