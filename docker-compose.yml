@@ -31,7 +31,7 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   mediamtx-rtsp:
-    image: kerberos/rtsp-simple-server:latest-rpi
+    image: bluenviron/mediamtx:latest-ffmpeg-rpi
     restart: "always"
     labels:
       io.balena.features.dbus: '1'
@@ -43,6 +43,11 @@ services:
     network_mode: host
     ports:
       - 8554:8554
+      - 8890:8890/udp
+      - 1935:1935
+      - 8888:8888
+      - 8889:8889
+      - 9997:9997
     privileged: true
     user: root
     environment:
@@ -53,11 +58,11 @@ services:
       RTSP_PORT: 8554
       MTX_PATH: usbcam
     volumes:
-      - "rtsp-simple-server.yml:/rtsp-simple-server.yml"
+      - "mediamtx.yml:/rtsp-simple-server.yml"
     tmpfs:
       - "/dev/shm:exec"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-  rtsp-simple-server.yml:
+  mediamtx.yml:
