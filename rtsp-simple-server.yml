@@ -556,7 +556,7 @@ paths:
   # my_camera:
   #   source: rtsp://my_camera
   usbcam:
-    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://$MTX_WEBRTCADDITIONALHOSTS.local:$RTSP_PORT/$RTSP_PATH
+    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://$MTX_WEBRTCADDITIONALHOSTS:$RTSP_PORT/$MTX_PATH
     runOnInitRestart: yes
   # Settings under path "all_others" are applied to all paths that
   # do not match another entry.
