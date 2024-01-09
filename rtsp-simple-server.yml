@@ -12,7 +12,7 @@ paths:
   # my_camera:
   #   source: rtsp://my_camera
   usbcam:
-    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp -rtsp_transport $MTX_PROTOCOLS rtsp://$MTX_WEBRTCADDITIONALHOSTS:$RTSP_PORT/$MTX_PATH || true
+    runOnInit: ffmpeg -input_format mjpeg -f video4linux2 -s 1280x720 -r 30 -i /dev/video0 -c:v h264_omx -r 30 -b:v 8M -an f rtsp -rtsp_transport $MTX_PROTOCOLS rtsp://$MTX_WEBRTCADDITIONALHOSTS:$RTSP_PORT/$MTX_PATH 
     runOnInitRestart: yes
   rpicam:
     source: rpiCamera
