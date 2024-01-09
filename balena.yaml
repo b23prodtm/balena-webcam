@@ -19,6 +19,8 @@ data:
     - AGENT_MODE: "release"
     - AGENT_USERNAME: "root"
     - AGENT_PASSWORD: "root"
+    - MTX_WEBRTCADDITIONALHOSTS: "videosurveillance"
+    - MTX_PATH: "usbcam"
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
     - raspberrypi3
