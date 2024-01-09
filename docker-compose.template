@@ -33,6 +33,8 @@ services:
   mediamtx-rtsp:
     image: bluenviron/mediamtx:%%IMG_TAG%%
     restart: "always"
+    devices:
+      - /dev/video0
     labels:
       io.balena.features.dbus: '1'
       io.balena.features.firmware: '1'

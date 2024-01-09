@@ -12,7 +12,8 @@ paths:
   # my_camera:
   #   source: rtsp://my_camera
   usbcam:
-    runOnInit: ffmpeg -list_devices true -f dshow -i dummy
+    #runOnInit: ffmpeg -list_devices true -f dshow -i dummy
+    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -pix_fmt yuv420p -preset ultrafast -b:v 600k -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH
     runOnInitRestart: yes
   rpicam:
     source: rpiCamera
