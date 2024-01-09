@@ -14,6 +14,8 @@ services:
   hostname: # https://github.com/balenablocks/hostname
     image: balenablocks/hostname:latest
     restart: no
+    labels:
+        io.balena.features.supervisor-api: 1
     environment:
       SET_HOSTNAME: videosurveillance
   mediamtx-rtsp:
@@ -40,7 +42,7 @@ services:
     volumes:
       - "rtsp-simple-server.yml:/mediamtx.yml"
     tmpfs:
-      - "/dev/shm:exec"
+      - "/dev/shm"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
