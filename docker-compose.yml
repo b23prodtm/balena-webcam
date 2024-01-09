@@ -19,7 +19,7 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   mediamtx-rtsp:
-    image: bluenviron/mediamtx:latest-ffmpeg
+    image: bluenviron/mediamtx:latest-ffmpeg-rpi
     restart: always
     devices:
       - /dev/video0
