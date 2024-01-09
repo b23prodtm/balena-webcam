@@ -1,0 +1,12 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-golang
+
+RUN apk add --no-cache \
+    ffmpeg
+
+WORKDIR /
+# We used to build our own binaries (bluenviron/mediamtx) but we can't pull source code on demand yet !
+# TODO: the deploy-to-fleet function should allow submodule checkout
+COPY linux/%%BALENA_ARCH%%/mediamtx /
+RUN chmod +x /mediamtx
+
+ENTRYPOINT [ "/mediamtx" ]
