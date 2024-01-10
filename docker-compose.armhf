@@ -5,13 +5,6 @@ services:
     network_mode: host
     tty: true
     restart: "always"
-    labels:
-      io.balena.features.dbus: '1'
-      io.balena.features.firmware: '1'
-      io.balena.features.resin-api: '1'
-      io.balena.features.balena-socket: '1'
-      io.balena.features.kernel-modules: '1'
-      io.balena.features.supervisor-api: '1'
     environment:
       UDEV: 1
     volumes:
@@ -26,12 +19,12 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   webcam:
-    image: betothreeprod/webcam-stream:%%IMG_TAG%%
+    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
     build:
       context: .
       dockerfile: Dockerfile.armhf
       args:
-        TARGETPLATFORM: %%TARGETPLATFORM%%
+        TARGETPLATFORM: linux/arm/v7
     restart: "always"
     devices:
       - /dev/video0
