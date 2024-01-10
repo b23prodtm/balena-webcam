@@ -39,6 +39,7 @@ services:
     privileged: true
     user: root
     environment:
+      TARGETPLATFORM: linux/arm
       UDEV: 1
       MTX_PROTOCOLS: tcp
       MTX_WEBRTCADDITIONALHOSTS: videosurveillance
