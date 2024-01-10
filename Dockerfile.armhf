@@ -11,7 +11,7 @@ WORKDIR /
 # We used to build our own binaries (bluenviron/mediamtx) but we can't pull source code on demand yet !
 # TODO: the deploy-to-fleet function should allow submodule checkout
 COPY $TARGETPLATFORM/. /
-#RUN chmod +x /mediamtx
-RUN [ "cross-build-end" ]
+RUN chmod +x /mediamtx
+#RUN [ "cross-build-end" ]
 
 ENTRYPOINT [ "/mediamtx" ]
