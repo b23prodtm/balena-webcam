@@ -35,7 +35,6 @@ services:
     restart: "always"
     devices:
       - /dev/video0
-    network_mode: host
     ports:
       - 8554:8554
       - 8890:8890/udp
