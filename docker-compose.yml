@@ -1,7 +1,7 @@
 version: '2'
 services:
   agent: # https://github.com/kerberos/agent
-    image: kerberos/agent
+    image: kerberos/agent:751aa17
     network_mode: host
     tty: true
     restart: "always" 
