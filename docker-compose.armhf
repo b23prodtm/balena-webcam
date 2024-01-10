@@ -1,17 +1,10 @@
 version: '2'
 services:
   agent: # https://github.com/kerberos/agent
-    image: bh.cr/kerberos_io/agent
+    image: kerberos/agent
     network_mode: host
     tty: true
     restart: "always"
-    labels:
-      io.balena.features.dbus: '1'
-      io.balena.features.firmware: '1'
-      io.balena.features.resin-api: '1'
-      io.balena.features.balena-socket: '1'
-      io.balena.features.kernel-modules: '1'
-      io.balena.features.supervisor-api: '1'
     environment:
       UDEV: 1
     volumes:
@@ -22,32 +15,31 @@ services:
     image: balenablocks/hostname:latest
     restart: "no"
     labels:
-      io.balena.features.dbus: '1'
-      io.balena.features.firmware: '1'
-      io.balena.features.resin-api: '1'
-      io.balena.features.balena-socket: '1'
-      io.balena.features.kernel-modules: '1'
       io.balena.features.supervisor-api: '1'
     environment:
       SET_HOSTNAME: videosurveillance
-  mediamtx-rtsp:
-    image: kerberos/rtsp-simple-server:latest-rpi
+  webcam:
+    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
+    build:
+      context: .
+      dockerfile: Dockerfile.armhf
+      args:
+        TARGETPLATFORM: linux/arm/v7
     restart: "always"
-    labels:
-      io.balena.features.dbus: '1'
-      io.balena.features.firmware: '1'
-      io.balena.features.resin-api: '1'
-      io.balena.features.balena-socket: '1'
-      io.balena.features.kernel-modules: '1'
-      io.balena.features.supervisor-api: '1'
+    devices:
+      - /dev/video0
     network_mode: host
     ports:
       - 8554:8554
+      - 8890:8890/udp
+      - 1935:1935
+      - 8888:8888
+      - 8889:8889
+      - 9997:9997
     privileged: true
     user: root
     environment:
       UDEV: 1
-      TARGETPLATFORM: linux/arm/v7
       MTX_PROTOCOLS: tcp
       MTX_WEBRTCADDITIONALHOSTS: videosurveillance
       RTSP_PORT: 8554

@@ -1,0 +1,17 @@
+ARG TARGETPLATFORM
+FROM balenalib/intel-nuc-alpine-golang
+
+ENV TARGETPLATFORM ${TARGETPLATFORM:-'linux/amd64'}
+#RUN [ "cross-build-start" ]
+
+RUN apk add --no-cache \
+    ffmpeg
+
+WORKDIR /
+# We used to build our own binaries (bluenviron/mediamtx) but we can't pull source code on demand yet !
+# TODO: the deploy-to-fleet function should allow submodule checkout
+COPY $TARGETPLATFORM/. /
+RUN chmod +x /mediamtx
+#RUN [ "cross-build-end" ]
+
+ENTRYPOINT [ "/mediamtx" ]
