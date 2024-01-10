@@ -1,7 +1,7 @@
 ARG TARGETPLATFORM
 FROM balenalib/raspberrypi3-64-alpine-golang
 
-ENV TARGETPLATFORM ${TARGETPLATFORM:linux/arm64}
+ENV TARGETPLATFORM=${TARGETPLATFORM:linux/arm64}
 RUN [ "cross-build-start" ]
 
 RUN apk add --no-cache \

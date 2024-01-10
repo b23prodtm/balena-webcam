@@ -1,7 +1,8 @@
 ARG TARGETPLATFORM
 FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-golang
 
-ENV TARGETPLATFORM ${TARGETPLATFORM:%%TARGETPLATFORM%%}
+ENV TARGETPLATFORM=${TARGETPLATFORM:%%TARGETPLATFORM%%}
+#RUN [ "cross-build-start" ]
 
 RUN apk add --no-cache \
     ffmpeg
@@ -11,5 +12,6 @@ WORKDIR /
 # TODO: the deploy-to-fleet function should allow submodule checkout
 COPY linux/$TARGETPLATFORM/. /
 RUN chmod +x /mediamtx
+#RUN [ "cross-build-end" ]
 
 ENTRYPOINT [ "/mediamtx" ]
