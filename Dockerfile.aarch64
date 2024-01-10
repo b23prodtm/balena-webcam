@@ -2,7 +2,7 @@ ARG TARGETPLATFORM
 FROM balenalib/raspberrypi3-64-alpine-golang
 
 ENV TARGETPLATFORM ${TARGETPLATFORM:-'linux/arm64'}
-RUN [ "cross-build-start" ]
+#RUN [ "cross-build-start" ]
 
 RUN apk add --no-cache \
     ffmpeg
@@ -11,7 +11,7 @@ WORKDIR /
 # We used to build our own binaries (bluenviron/mediamtx) but we can't pull source code on demand yet !
 # TODO: the deploy-to-fleet function should allow submodule checkout
 COPY $TARGETPLATFORM/. /
-RUN chmod +x /mediamtx
+#RUN chmod +x /mediamtx
 RUN [ "cross-build-end" ]
 
 ENTRYPOINT [ "/mediamtx" ]
