@@ -14,4 +14,5 @@ COPY $TARGETPLATFORM/. /
 RUN chmod +x /mediamtx
 #RUN [ "cross-build-end" ]
 
-ENTRYPOINT [ "/mediamtx" ]
+ENTRYPOINT [ "/usr/bin/entry.sh" ]
+CMD [ "/mediamtx" ]
