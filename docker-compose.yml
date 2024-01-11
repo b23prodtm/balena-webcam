@@ -2,7 +2,11 @@ version: '2'
 services:
   agent: # https://github.com/kerberos/agent
     image: kerberos/agent:751aa17
-    network_mode: host
+    networks:
+      - kerberos
+    ports:
+      - 80:80
+      - 443:443
     tty: true
     restart: "always" 
     environment:
@@ -29,6 +33,8 @@ services:
     restart: "always"
     devices:
       - /dev/video0
+    networks:
+      - kerberos
     ports:
       - 8554:8554
       - 8890:8890/udp
@@ -54,3 +60,5 @@ volumes:
   kerberosagent_snapshots:
   kerberosagent_config:
   rtsp-simple-server.yml:
+networks:
+  kerberos:
