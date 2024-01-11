@@ -40,6 +40,8 @@ services:
     restart: "always" 
     environment:
       UDEV: 1
+      AGENT_USERNAME: root
+      AGENT_PASSWORD: root
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
@@ -51,8 +53,6 @@ services:
       io.balena.features.supervisor-api: '1'
     environment:
       SET_HOSTNAME: webcam
-      AGENT_USERNAME: root
-      AGENT_PASSWORD: root
 volumes:
   kerberosagent_recordings:    
   kerberosagent_snapshots:
