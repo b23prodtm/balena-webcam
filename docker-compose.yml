@@ -19,7 +19,8 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   webcam:
-    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
+    container_name: rtsp
+    image: betothreeprod/webcam-stream
     build:
       context: .
       dockerfile: Dockerfile.armhf
