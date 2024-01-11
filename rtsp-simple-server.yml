@@ -556,8 +556,8 @@ paths:
   # my_camera:
   #   source: rtsp://my_camera
   usbcam:
-    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -pix_fmt yuv420p -preset ultrafast -b:v 600k -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH
-    runOnInitRestart: yes
+    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://$MTX_WEBRTCADDITIONALHOSTS:$RTSP_PORT/$RTSP_PATH
+        runOnInitRestart: yes
   rpicam:
     source: rpiCamera
     # ID of the camera
