@@ -7,6 +7,8 @@ services:
     restart: "always"
     environment:
       UDEV: 1
+      AGENT_USERNAME: root
+      AGENT_PASSWORD: root
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"

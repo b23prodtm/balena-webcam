@@ -1,5 +1,29 @@
 version: '2'
 services:
+  agent: # https://github.com/kerberos/agent
+    image: kerberos/agent:751aa17
+    networks:
+      - kerberos
+    ports:
+      - 80:80
+      - 443:443
+    tty: true
+    restart: "always" 
+    environment:
+      UDEV: 1
+      AGENT_USERNAME: root
+      AGENT_PASSWORD: root
+    volumes:
+      - "kerberosagent_recordings:/home/agent/data/recordings"
+      - "kerberosagent_snapshots:/home/agent/data/snapshots"
+      - "kerberosagent_config:/home/agent/data/config"
+  hostname: # https://github.com/balenablocks/hostname
+    image: balenablocks/hostname:latest
+    restart: "no"
+    labels:
+      io.balena.features.supervisor-api: '1'
+    environment:
+      SET_HOSTNAME: webcam
   webcam:
     image: betothreeprod/webcam-stream
     build:
@@ -29,28 +53,6 @@ services:
       MTX_PATH: usbcam
     tmpfs:
       - "/dev/shm:exec"
-  agent: # https://github.com/kerberos/agent
-    image: kerberos/agent:751aa17
-    networks:
-      - kerberos
-    ports:
-      - 80:80
-      - 443:443
-    tty: true
-    restart: "always" 
-    environment:
-      UDEV: 1
-    volumes:
-      - "kerberosagent_recordings:/home/agent/data/recordings"
-      - "kerberosagent_snapshots:/home/agent/data/snapshots"
-      - "kerberosagent_config:/home/agent/data/config"
-  hostname: # https://github.com/balenablocks/hostname
-    image: balenablocks/hostname:latest
-    restart: "no"
-    labels:
-      io.balena.features.supervisor-api: '1'
-    environment:
-      SET_HOSTNAME: webcam
 volumes:
   kerberosagent_recordings:    
   kerberosagent_snapshots:
