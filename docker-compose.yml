@@ -1,5 +1,37 @@
 version: '2'
 services:
+  webcam:
+    container_name: rtsp
+    image: betothreeprod/webcam-stream
+    build:
+      context: .
+      dockerfile: Dockerfile.aarch64
+      args:
+        TARGETPLATFORM: linux/arm64
+    restart: "always"
+    devices:
+      - /dev/video0
+    networks:
+      - kerberos
+    ports:
+      - 8554:8554
+      - 8890:8890/udp
+      - 1935:1935
+      - 8888:8888
+      - 8889:8889
+      - 9997:9997
+    privileged: true
+    environment:
+      TARGETPLATFORM: linux/arm64
+      UDEV: 1
+      MTX_PROTOCOLS: tcp
+      MTX_WEBRTCADDITIONALHOSTS: webcam
+      RTSP_PORT: 8554
+      MTX_PATH: usbcam
+    volumes:
+      - "rtsp-simple-server.yml:/mediamtx.yml"
+    tmpfs:
+      - "/dev/shm"
   agent: # https://github.com/kerberos/agent
     image: kerberos/agent:751aa17
     networks:
@@ -21,42 +53,9 @@ services:
     labels:
       io.balena.features.supervisor-api: '1'
     environment:
-      SET_HOSTNAME: videosurveillance
-  webcam:
-    container_name: rtsp
-    image: betothreeprod/webcam-stream
-    build:
-      context: .
-      dockerfile: Dockerfile.armhf
-      args:
-        TARGETPLATFORM: linux/arm
-    restart: "always"
-    devices:
-      - /dev/video0
-    networks:
-      - kerberos
-    ports:
-      - 8554:8554
-      - 8890:8890/udp
-      - 1935:1935
-      - 8888:8888
-      - 8889:8889
-      - 9997:9997
-    privileged: true
-    user: root
-    environment:
-      TARGETPLATFORM: linux/arm
-      UDEV: 1
-      MTX_PROTOCOLS: tcp
-      MTX_WEBRTCADDITIONALHOSTS: videosurveillance
-      RTSP_PORT: 8554
-      MTX_PATH: usbcam
-    volumes:
-      - "rtsp-simple-server.yml:/mediamtx.yml"
-    tmpfs:
-      - "/dev/shm:exec"
+      SET_HOSTNAME: webcam
 volumes:
-  kerberosagent_recordings:
+  kerberosagent_recordings:    
   kerberosagent_snapshots:
   kerberosagent_config:
   rtsp-simple-server.yml:
