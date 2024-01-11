@@ -1,7 +1,6 @@
-version: '2'
+deversion: '2'
 services:
   webcam:
-    container_name: rtsp
     image: betothreeprod/webcam-stream
     build:
       context: .
@@ -28,10 +27,8 @@ services:
       MTX_WEBRTCADDITIONALHOSTS: webcam
       RTSP_PORT: 8554
       MTX_PATH: usbcam
-    volumes:
-      - "rtsp-simple-server.yml:/mediamtx.yml"
     tmpfs:
-      - "/dev/shm"
+      - "/dev/shm:exec"
   agent: # https://github.com/kerberos/agent
     image: kerberos/agent:751aa17
     networks:
@@ -58,6 +55,5 @@ volumes:
   kerberosagent_recordings:    
   kerberosagent_snapshots:
   kerberosagent_config:
-  rtsp-simple-server.yml:
 networks:
   kerberos:

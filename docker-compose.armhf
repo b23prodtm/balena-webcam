@@ -19,7 +19,7 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   webcam:
-    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
+    image: betothreeprod/webcam-stream
     build:
       context: .
       dockerfile: Dockerfile.armhf
@@ -44,12 +44,9 @@ services:
       MTX_WEBRTCADDITIONALHOSTS: videosurveillance
       RTSP_PORT: 8554
       MTX_PATH: usbcam
-    volumes:
-      - "rtsp-simple-server.yml:/mediamtx.yml"
     tmpfs:
       - "/dev/shm:exec"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-  rtsp-simple-server.yml:
