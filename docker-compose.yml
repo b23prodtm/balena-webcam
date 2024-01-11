@@ -19,7 +19,7 @@ services:
       - 8888:8888
       - 8889:8889
       - 9997:9997
-    privileged: true
+    user: root
     environment:
       TARGETPLATFORM: linux/arm64
       UDEV: 1
