@@ -21,7 +21,7 @@ services:
     labels:
       io.balena.features.supervisor-api: '1'
     environment:
-      SET_HOSTNAME: videosurveillance
+      SET_HOSTNAME: webcam
   webcam:
     container_name: rtsp
     image: betothreeprod/webcam-stream
@@ -48,13 +48,13 @@ services:
       TARGETPLATFORM: linux/arm
       UDEV: 1
       MTX_PROTOCOLS: tcp
-      MTX_WEBRTCADDITIONALHOSTS: videosurveillance
+      MTX_WEBRTCADDITIONALHOSTS: webcam
       RTSP_PORT: 8554
       MTX_PATH: usbcam
     volumes:
       - "rtsp-simple-server.yml:/mediamtx.yml"
     tmpfs:
-      - "/dev/shm:exec"
+      - "/dev/shm"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
