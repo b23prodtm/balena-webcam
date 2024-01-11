@@ -1,4 +1,4 @@
-deversion: '2'
+version: '2'
 services:
   webcam:
     image: betothreeprod/webcam-stream
