@@ -5,9 +5,9 @@ services:
     image: betothreeprod/webcam-stream
     build:
       context: .
-      dockerfile: Dockerfile.armhf
+      dockerfile: Dockerfile.aarch64
       args:
-        TARGETPLATFORM: linux/arm
+        TARGETPLATFORM: linux/arm64
     restart: "always"
     devices:
       - /dev/video0
@@ -22,7 +22,7 @@ services:
       - 9997:9997
     privileged: true
     environment:
-      TARGETPLATFORM: linux/arm
+      TARGETPLATFORM: linux/arm64
       UDEV: 1
       MTX_PROTOCOLS: tcp
       MTX_WEBRTCADDITIONALHOSTS: webcam
