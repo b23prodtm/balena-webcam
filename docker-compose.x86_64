@@ -48,7 +48,7 @@ services:
       MTX_PROTOCOLS: tcp
       MTX_WEBRTCADDITIONALHOSTS: videosurveillance
       RTSP_PORT: 8554
-      MTX_PATH: usbcam
+      MTX_PATH: webcam
     tmpfs:
       - "/dev/shm:exec"
 volumes:
