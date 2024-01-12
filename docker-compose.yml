@@ -53,7 +53,7 @@ services:
       RTSP_PORT: 8554
       MTX_PATH: webcam
     tmpfs:
-      - "/dev/shm:exec"
+      - "/dev/shm"
 volumes:
   kerberosagent_recordings:    
   kerberosagent_snapshots:
