@@ -13,6 +13,8 @@ services:
       UDEV: 1
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
+    tmpfs:
+      - "/dev/shm"
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
