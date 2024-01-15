@@ -30,6 +30,7 @@ services:
       dockerfile: Dockerfile.x86_64
       args:
         TARGETPLATFORM: linux/amd64
+        MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
     restart: "always"
     devices:
       - /dev/video0
@@ -44,10 +45,8 @@ services:
       - 9997:9997
     privileged: true
     environment:
-      TARGETPLATFORM: linux/amd64
       UDEV: 1
       MTX_PROTOCOLS: tcp
-      MTX_WEBRTCADDITIONALHOSTS: videosurveillance
       RTSP_PORT: 8554
       MTX_PATH: webcam
     tmpfs:
