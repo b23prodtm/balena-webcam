@@ -14,7 +14,7 @@ WORKDIR /
 # TODO: the deploy-to-fleet function should allow submodule checkout
 COPY $TARGETPLATFORM/. /
 COPY rtsp-simple-server.yml /mediamtx.yml
-RUN sed -i.orig "/s/videosurveillance/${MTX_WEBRTCADDITIONALHOSTS}/g" /mediamtx.yml
+RUN sed -i.orig "s/videosurveillance/${MTX_WEBRTCADDITIONALHOSTS}/g" /mediamtx.yml
 RUN chmod +x /mediamtx
 #RUN [ "cross-build-end" ]
 
