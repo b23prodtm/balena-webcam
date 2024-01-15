@@ -50,7 +50,6 @@ services:
       - 9997:9997
     privileged: true
     environment:
-      TARGETPLATFORM: linux/arm64
       UDEV: 1
       MTX_PROTOCOLS: tcp
       RTSP_PORT: 8554
