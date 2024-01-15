@@ -47,7 +47,7 @@ services:
       MTX_WEBRTCADDITIONALHOSTS: videosurveillance
       RTSP_PORT: 8554
       MTX_PATH: usbcam
-   tmpfs:
+    tmpfs:
       - "/dev/shm"
 volumes:
   kerberosagent_recordings:
