@@ -1,7 +1,9 @@
 ARG TARGETPLATFORM
+ARG MTX_WEBRTCADDITIONALHOSTS
 FROM balenalib/raspberrypi3-alpine-golang
 
 ENV TARGETPLATFORM ${TARGETPLATFORM:-'linux/arm'}
+ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS}
 #RUN [ "cross-build-start" ]
 
 RUN apk add --no-cache \
@@ -12,6 +14,7 @@ WORKDIR /
 # TODO: the deploy-to-fleet function should allow submodule checkout
 COPY $TARGETPLATFORM/. /
 COPY rtsp-simple-server.yml /mediamtx.yml
+RUN sed -i.orig "s/videosurveillance/${MTX_WEBRTCADDITIONALHOSTS}/g" /mediamtx.yml
 RUN chmod +x /mediamtx
 #RUN [ "cross-build-end" ]
 

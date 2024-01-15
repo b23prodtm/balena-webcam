@@ -45,7 +45,7 @@ services:
       UDEV: 1
       MTX_PROTOCOLS: tcp
       RTSP_PORT: 8554
-      MTX_PATH: webcam
+      MTX_PATH: usbcam
     tmpfs:
       - "/dev/shm"
 volumes:
