@@ -18,10 +18,9 @@ You can one-click-deploy this application using the button below:
 Application environment variables apply to all services within the application, and can be applied fleet-wide to apply to multiple devices.
 
 | Name           | Description                                                                 |
-| -------------- | --------------------------------------------------------------------------- |
+| -------------- | --------------------------------------------- |
 | `SET_HOSTNAME` | Set a custom hostname on application start. Default is `videosurveillance`. |
-| `MTX_WEBRTCADDITIONALHOSTS` | Specify the hostname network 
- IP address to publish the stream to |
+| `MTX_WEBRTCADDITIONALHOSTS` | Specify the hostname network IP address to publish the stream to |
 
 ### RSTP server
 Currently only H264 RTSP streams are supported from mediamtx sidecar container
@@ -52,14 +51,14 @@ deployment scripts `balena_deploy --nobuild` before to push packages:
 ### Updating Docker service image (Dockerfile.template)
 
 A new service image can be build
-- Check values in `${BALENA_ARCH}.env`,
-========================================================
-| Node Machine   | `BALENA_MACHINE_NAME` | `BALENA_ARCH`
-| ------------     ---------------------   -------------
-| Raspberry Pi 3 | raspberrypi3           | armhf
-| Raspberry Pi 4 | raspberrypi3-64       | aarch64
-| Mini PC        | intel-nuc             | x86_64
-========================================================
+- Check values in `${BALENA_ARCH}.env`
+  
+| Node Machine   | `BALENA_MACHINE_NAME` | `BALENA_ARCH` |
+| ------------ | -------------------- | ------------- |
+| Raspberry Pi 3 | raspberrypi3           | armhf |
+| Raspberry Pi 4 | raspberrypi3-64       | aarch64 |
+| Mini PC        | intel-nuc             | x86_64 |
+
 - Run `./deploy.sh [BALENA_ARCH] --nobuild`
   You can select 1:armhf, 2:aarch64 or 3:x86_64 as the target machine CPU
 - You choose to build FROM a balenalib base image as set in Dockerfile.template, then type `0` or `CTRL-C` to exit the script
