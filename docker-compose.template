@@ -32,6 +32,7 @@ services:
         TARGETPLATFORM: %%TARGETPLATFORM%%
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
+    network_mode: host
     devices:
       - /dev/video0
     networks:
