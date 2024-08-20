@@ -2,7 +2,8 @@ version: '2'
 services:
   agent: # https://github.com/kerberos/agent
     image: kerberos/agent:751aa17
-    network_mode: host
+    networks:
+      - kerberos
     tty: true
     restart: "always"
     environment:
@@ -10,7 +11,7 @@ services:
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
     tmpfs:
-      - "/dev/shm"
+      - "/dev/shm:exec"
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
@@ -29,10 +30,12 @@ services:
       dockerfile: Dockerfile.aarch64
       args:
         TARGETPLATFORM: linux/arm64
-        MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
+        MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
       - /dev/video0
+    networks:
+      - kerberos
     ports:
       - 8554:8554
       - 8890:8890/udp
@@ -45,10 +48,12 @@ services:
       UDEV: 1
       MTX_PROTOCOLS: tcp
       RTSP_PORT: 8554
-      MTX_PATH: usbcam
+      MTX_PATH: rpicam
     tmpfs:
-      - "/dev/shm"
+      - "/dev/shm:exec"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
+networks:
+  kerberos:

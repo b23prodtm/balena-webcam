@@ -4,17 +4,14 @@ services:
     image: kerberos/agent:751aa17
     networks:
       - kerberos
-    ports:
-      - 80:80
-      - 443:443
     tty: true
-    restart: "always" 
+    restart: "always"
     environment:
       UDEV: 1
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
     tmpfs:
-      - "/dev/shm"
+      - "/dev/shm:exec"
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
@@ -26,16 +23,16 @@ services:
       io.balena.features.supervisor-api: '1'
     environment:
       SET_HOSTNAME: videosurveillance
-    networks:
-      - kerberos
   webcam:
     image: betothreeprod/webcam-stream
     build:
       context: .
-      dockerfile: Dockerfile.aarch64
+      dockerfile: Dockerfile.x86_64
       args:
-        TARGETPLATFORM: linux/arm64
+        TARGETPLATFORM: linux/amd64
         MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
+        TARGETPLATFORM: linux/arm64
+        MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
       - /dev/video0
@@ -53,11 +50,11 @@ services:
       UDEV: 1
       MTX_PROTOCOLS: tcp
       RTSP_PORT: 8554
-      MTX_PATH: webcam
+      MTX_PATH: rpicam
     tmpfs:
-      - "/dev/shm"
+      - "/dev/shm:exec"
 volumes:
-  kerberosagent_recordings:    
+  kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
 networks:

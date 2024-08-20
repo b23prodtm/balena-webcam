@@ -2,7 +2,8 @@ version: '2'
 services:
   agent: # https://github.com/kerberos/agent
     image: kerberos/agent:751aa17
-    network_mode: host
+    networks:
+      - kerberos
     tty: true
     restart: "always"
     environment:
@@ -28,11 +29,13 @@ services:
       context: .
       dockerfile: Dockerfile.armhf
       args:
-        TARGETPLATFORM: linux/arm 
+        TARGETPLATFORM: linux/arm
         MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
     restart: "always"
     devices:
       - /dev/video0
+    networks:
+      - kerberos
     ports:
       - 8554:8554
       - 8890:8890/udp
@@ -52,3 +55,5 @@ volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
+networks:
+  kerberos:

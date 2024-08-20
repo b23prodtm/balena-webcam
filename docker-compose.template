@@ -1,17 +1,14 @@
 version: '2'
 services:
-  agent: # https://github.com/kerberos/agent
-    image: kerberos/agent:751aa17
+  agent: # https://github.com/kerberos-io/balena-agent
+    image: bh.cr/kerberos_io/agent
     networks:
       - kerberos
     tty: true
     restart: "always"
     environment:
-      UDEV: 1
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
-    tmpfs:
-      - "/dev/shm"
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings"
       - "kerberosagent_snapshots:/home/agent/data/snapshots"
@@ -30,7 +27,7 @@ services:
       dockerfile: Dockerfile.template
       args:
         TARGETPLATFORM: %%TARGETPLATFORM%%
-        MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
+        MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
       - /dev/video0
@@ -48,9 +45,9 @@ services:
       UDEV: 1
       MTX_PROTOCOLS: tcp
       RTSP_PORT: 8554
-      MTX_PATH: usbcam
+      MTX_PATH: rpicam
     tmpfs:
-      - "/dev/shm"
+      - "/dev/shm:exec"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
