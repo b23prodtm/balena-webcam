@@ -1,9 +1,9 @@
 ARG TARGETPLATFORM
 ARG MTX_WEBRTCADDITIONALHOSTS
-FROM balenalib/-debian-node:latest-bullseye
-#FROM balenalib/-alpine-node:latest-edge
+FROM balenalib/intel-nuc-debian-node:latest-bullseye
+#FROM balenalib/intel-nuc-alpine-node:latest-edge
 
-ENV TARGETPLATFORM ${TARGETPLATFORM:-'%%TARGETPLATFORM%%'}
+ENV TARGETPLATFORM ${TARGETPLATFORM:-linux/amd64}
 ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS}
 # RUN [ "cross-build-start" ]
 
