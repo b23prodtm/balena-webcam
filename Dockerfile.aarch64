@@ -5,7 +5,7 @@ FROM balenalib/raspberrypi3-64-debian-node:latest-bullseye
 
 ENV TARGETPLATFORM ${TARGETPLATFORM:-linux/arm64}
 ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS}
-#RUN [ "cross-build-start" ]
+# RUN [ "cross-build-start" ]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg
@@ -16,6 +16,6 @@ WORKDIR /
 COPY $TARGETPLATFORM/. /
 COPY rtsp-simple-server.yml /mediamtx.yml
 RUN chmod +x /mediamtx
-#RUN [ "cross-build-end" ]
+# RUN [ "cross-build-end" ]
 
 ENTRYPOINT [ "/mediamtx" ]
