@@ -20,9 +20,7 @@ data:
     - AGENT_USERNAME: "root"
     - AGENT_PASSWORD: "root"
     - MTX_WEBRTCADDITIONALHOSTS: "<my-ip>"
-    - MTX_PATH: "webcam"
-    - RESIN_HOST_CONFIG_start_X: "1"
-    - RESIN_HOST_CONFIG_gpu_mem: "128"
+    - MTX_PATH: "rpicam"
 
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
