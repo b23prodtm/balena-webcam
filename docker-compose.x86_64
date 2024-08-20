@@ -1,21 +1,21 @@
 version: '2'
 services:
-  agent: # https://github.com/kerberos/agent
-    image: kerberos/agent:751aa17
+  agent: # https://github.com/kerberos-io/balena-agent
+    image: bh.cr/kerberos_io/agent
     networks:
       - kerberos
+    ports:
+      - "80:80"
     tty: true
     restart: "always"
     environment:
-      UDEV: 1
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
-    tmpfs:
-      - "/dev/shm"
+      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://videosurveillance.local:8554/rpicam
     volumes:
-      - "kerberosagent_recordings:/home/agent/data/recordings"
-      - "kerberosagent_snapshots:/home/agent/data/snapshots"
-      - "kerberosagent_config:/home/agent/data/config"
+      - "kerberosagent_recordings:/home/agent/data/recordings:rw"
+      - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
+      - "kerberosagent_config:/home/agent/data/config:rw"
   hostname: # https://github.com/balenablocks/hostname
     image: balenablocks/hostname:latest
     restart: "no"
@@ -29,8 +29,8 @@ services:
       context: .
       dockerfile: Dockerfile.x86_64
       args:
-        TARGETPLATFORM: linux/amd64
-        MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
+        TARGETPLATFORM: %%TARGETPLATFORM%%
+        MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
       - /dev/video0
@@ -46,11 +46,11 @@ services:
     privileged: true
     environment:
       UDEV: 1
-      MTX_PROTOCOLS: tcp
+      MTX_PROTOCOLS: tcp,udp
       RTSP_PORT: 8554
-      MTX_PATH: usbcam
+      MTX_PATH: rpicam
     tmpfs:
-      - "/dev/shm"
+      - "/dev/shm:exec"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
