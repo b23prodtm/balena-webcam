@@ -4,6 +4,8 @@ services:
     image: bh.cr/kerberos_io/agent
     networks:
       - kerberos
+    ports:
+      - "80:80"
     tty: true
     restart: "always"
     environment:
@@ -44,7 +46,7 @@ services:
     privileged: true
     environment:
       UDEV: 1
-      MTX_PROTOCOLS: tcp
+      MTX_PROTOCOLS: tcp,udp
       RTSP_PORT: 8554
       MTX_PATH: rpicam
     tmpfs:
