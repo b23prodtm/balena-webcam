@@ -11,7 +11,7 @@ services:
     environment:
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
-      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://videosurveillance.local:8554/rpicam
+      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://videosurveillance.local/rpicam
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings:rw"
       - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
@@ -29,7 +29,7 @@ services:
       context: .
       dockerfile: Dockerfile.x86_64
       args:
-        TARGETPLATFORM: %%TARGETPLATFORM%%
+        TARGETPLATFORM: linux/amd64
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
@@ -38,15 +38,14 @@ services:
       - kerberos
     ports:
       - 8554:8554
-      - 8890:8890/udp
-      - 1935:1935
-      - 8888:8888
-      - 8889:8889
-      - 9997:9997
+      - 8000:8000
+      - 8001:8001
+      - 8002:8002
+      - 8003:8003
     privileged: true
     environment:
       UDEV: 1
-      MTX_PROTOCOLS: tcp,udp
+      MTX_PROTOCOLS: tcp,udp,multicast
       RTSP_PORT: 8554
       MTX_PATH: rpicam
     tmpfs:
