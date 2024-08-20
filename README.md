@@ -21,6 +21,8 @@ Application environment variables apply to all services within the application, 
 | -------------- | --------------------------------------------- |
 | `SET_HOSTNAME` | Set a custom hostname on application start. Default is `videosurveillance`. |
 | `MTX_WEBRTCADDITIONALHOSTS` | Specify the hostname network IP address to publish the stream to |
+| `RESIN_HOST_CONFIG_start_X`| Set to "on" to enable graphical support |
+| `RESIN_HOST_CONFIG_gpu_mem` | Set to "128" megabytes for the graphics |
 
 ### RSTP server
 Currently only H264 RTSP streams are supported from mediamtx sidecar container
