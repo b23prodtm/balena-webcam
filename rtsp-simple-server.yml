@@ -555,19 +555,19 @@ paths:
   # example:
   # my_camera:
   #   source: rtsp://my_camera
-  #webcam:
-  #  runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH
-  #  runOnInitRestart: yes
-  rpicam:
-    source: rpiCamera
+  webcam:
+    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH
+    runOnInitRestart: yes
+  #rpicam:
+    #source: rpiCamera
     # ID of the camera
     #rpiCameraCamID: 0
 
     # width of frames
-    rpiCameraWidth: 1920
+    #rpiCameraWidth: 1920
 
     # height of frames
-    rpiCameraHeight: 1080
+    #rpiCameraHeight: 1080
 
     # flip horizontally
     #rpiCameraHFlip: false
@@ -623,7 +623,7 @@ paths:
     #rpiCameraMode:
 
     # frames per second
-    rpiCameraFPS: 3
+    # rpiCameraFPS: 3
 
     # period between IDR frames
     #rpiCameraIDRPeriod: 60
