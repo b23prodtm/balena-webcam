@@ -1,7 +1,7 @@
 ARG TARGETPLATFORM
 ARG MTX_WEBRTCADDITIONALHOSTS
 ARG RTSP_PORT
-FROM bluenviron/mediamtx:latest-ffmpeg-rpi as MTX_BASE
+FROM bluenviron/mediamtx:latest-ffmpeg as MTX_BASE
 FROM balenalib/intel-nuc-debian-node:latest-bullseye
 #FROM balenalib/intel-nuc-alpine-node:latest-edge
 
