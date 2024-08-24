@@ -20,9 +20,9 @@ WORKDIR /
 # We used to build our own binaries (bluenviron/mediamtx) but we can't pull source code on demand yet !
 # TODO: the deploy-to-fleet function should allow submodule checkout
 #COPY $TARGETPLATFORM/. /
-COPY --from=MTX_BASE /. /
+COPY --from=MTX_BASE /mediamtx /
 COPY rtsp-simple-server.yml /mediamtx.yml
-#RUN chmod +x /mediamtx
+RUN chmod +x /mediamtx
 # RUN [ "cross-build-end" ]
 
 ENTRYPOINT [ "/mediamtx" ]
