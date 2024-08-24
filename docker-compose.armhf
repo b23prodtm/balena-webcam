@@ -30,10 +30,12 @@ services:
       dockerfile: Dockerfile.armhf
       args:
         TARGETPLATFORM: linux/arm
-        MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
+        MTX_WEBRTCADDITIONALHOSTS: 192.168.1.28
     restart: "always"
     devices:
       - /dev/video0
+    networks:
+      - kerberos
     ports:
       - "8554:8554"
       - "1935:1935"
@@ -50,3 +52,4 @@ volumes:
   kerberosagent_config:
 networks:
   kerberos:
+    external: true
