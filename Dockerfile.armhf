@@ -11,10 +11,10 @@ ENV MTX_PROTOCOLS 'tcp'
 ENV RTSP_PORT ${RTSP_PORT:-'8554'}
 ENV MTX_PATH 'rpicam'
 ENV UDEV 1
-# RUN [ "cross-build-start" ]
+#RUN [ "cross-build-start" ]
 
-#RUN apt-get update && apt-get install -y --no-install-recommends \
-    #ffmpeg
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg
 
 WORKDIR /
 # We used to build our own binaries (bluenviron/mediamtx) but we can't pull source code on demand yet !
@@ -23,6 +23,6 @@ WORKDIR /
 COPY --from=MTX_BASE /mediamtx /
 COPY rtsp-simple-server.yml /mediamtx.yml
 RUN chmod +x /mediamtx
-# RUN [ "cross-build-end" ]
+#RUN [ "cross-build-end" ]
 
 ENTRYPOINT [ "/mediamtx" ]
