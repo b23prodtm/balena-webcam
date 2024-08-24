@@ -1,9 +1,8 @@
-version: '2'
+version: '3'
 services:
   agent: # https://github.com/kerberos-io/balena-agent
-    image: bh.cr/kerberos_io/agent
-    networks:
-      - kerberos
+    image: bh.cr/kerberos_io/agent    
+    network_mode: host
     ports:
       - "80:80"
     tty: true
@@ -49,5 +48,3 @@ volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-networks:
-  kerberos:
