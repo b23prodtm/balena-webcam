@@ -24,7 +24,7 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   webcam:
-    image: betothreeprod/webcam-stream
+    image: betothreeprod/webcam-stream:%%IMG_TAG%%
     build:
       context: .
       dockerfile: Dockerfile.template

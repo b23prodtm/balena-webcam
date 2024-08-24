@@ -27,9 +27,9 @@ services:
     image: betothreeprod/webcam-stream
     build:
       context: .
-      dockerfile: Dockerfile.armhf
+      dockerfile: Dockerfile.x86_64
       args:
-        TARGETPLATFORM: linux/arm
+        TARGETPLATFORM: linux/amd64
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
