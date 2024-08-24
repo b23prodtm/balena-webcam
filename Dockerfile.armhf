@@ -11,6 +11,7 @@ ENV MTX_PROTOCOLS 'tcp'
 ENV RTSP_PORT ${RTSP_PORT:-'8554'}
 ENV MTX_PATH 'rpicam'
 ENV UDEV 1
+ENV DOCKER_BUILDKIT 1
 # RUN [ "cross-build-start" ]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -25,4 +26,6 @@ COPY rtsp-simple-server.yml /mediamtx.yml
 RUN chmod +x /mediamtx
 # RUN [ "cross-build-end" ]
 
-RUN [ "--mount type=tmpfs,destination=/dev/shm,tmpfs-mode=1770", "/mediamtx" ]
+# TODO: Requires BuildKit
+#RUN --mount=type=tmpfs,destination=/dev/shm,tmpfs-mode=1770 /mediamtx
+ENTRYPOINT [ "/mediamtx" ]
