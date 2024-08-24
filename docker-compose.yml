@@ -36,6 +36,7 @@ services:
       - /dev/video0
     networks:
       - kerberos
+    userland-proxy: false
     ports:
       - "53:8553"
       - "8554:8554"
