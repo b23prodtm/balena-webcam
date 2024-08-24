@@ -77,4 +77,6 @@ Once your device joins the fleet you'll need to allow some time for it to downlo
 3. Go to the configuration page and fill-in the RTSP url of your IPCamera.
 4. Press save, and the Kerberos Agent will connect to your camera, and show a live view on the dashboard page.
 
+> Available soon: set MTX_PATH=rpicamera environment to set the source as the Pi Camera
+
 Documentation for the Kerberos Agent and other services can be found at [`https://doc.kerberos.io/`](https://doc.kerberos.io/)
