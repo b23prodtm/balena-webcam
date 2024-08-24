@@ -24,7 +24,7 @@ WORKDIR /
 COPY --from=MTX_BASE /mediamtx /
 COPY rtsp-simple-server.yml /
 COPY rtsp-simple-server-rpi.yml /
-COPY config_mtx.sh
+COPY config_mtx.sh /
 RUN chmod +x /config_mtx.sh && /config_mtx.sh "$MTX_PATH"
 RUN chmod +x /mediamtx
 # RUN [ "cross-build-end" ]
