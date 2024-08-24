@@ -1,8 +1,9 @@
 ARG TARGETPLATFORM
 ARG MTX_WEBRTCADDITIONALHOSTS
 ARG RTSP_PORT
-FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:latest-bullseye
+#FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:latest-bullseye
 #FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-node:latest-edge
+FROM bluenviron/mediamtx:latest-ffmpeg-rpi
 
 ENV TARGETPLATFORM ${TARGETPLATFORM:-'%%TARGETPLATFORM%%'}
 ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.local'}
@@ -12,15 +13,15 @@ ENV MTX_PATH 'rpicam'
 ENV UDEV 1
 #RUN [ "cross-build-start" ]
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ffmpeg
+#RUN apt-get update && apt-get install -y --no-install-recommends \
+    #ffmpeg
 
 WORKDIR /
 # We used to build our own binaries (bluenviron/mediamtx) but we can't pull source code on demand yet !
 # TODO: the deploy-to-fleet function should allow submodule checkout
-COPY $TARGETPLATFORM/. /
+#COPY $TARGETPLATFORM/. /
 COPY rtsp-simple-server.yml /mediamtx.yml
-RUN chmod +x /mediamtx
+#RUN chmod +x /mediamtx
 #RUN [ "cross-build-end" ]
 
 ENTRYPOINT [ "/mediamtx" ]
