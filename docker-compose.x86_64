@@ -1,21 +1,20 @@
-version: '2'
+version: '2.1'
 services:
-  agent: # https://github.com/kerberos/agent
-    image: kerberos/agent:751aa17
-    networks:
-      - kerberos
+  agent: # https://github.com/kerberos-io/balena-agent
+    image: bh.cr/kerberos_io/agent    
+    network_mode: host
+    ports:
+      - "80:80"
     tty: true
     restart: "always"
     environment:
-      UDEV: 1
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
-    tmpfs:
-      - "/dev/shm"
+      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://videosurveillance.local:8554/rpicamera
     volumes:
-      - "kerberosagent_recordings:/home/agent/data/recordings"
-      - "kerberosagent_snapshots:/home/agent/data/snapshots"
-      - "kerberosagent_config:/home/agent/data/config"
+      - "kerberosagent_recordings:/home/agent/data/recordings:rw"
+      - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
+      - "kerberosagent_config:/home/agent/data/config:rw"
   hostname: # https://github.com/balenablocks/hostname
     image: balenablocks/hostname:latest
     restart: "no"
@@ -24,36 +23,28 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   webcam:
-    image: betothreeprod/webcam-stream
+    image: betothreeprod/webcam-stream:latest-ffmpeg
     build:
       context: .
       dockerfile: Dockerfile.x86_64
       args:
         TARGETPLATFORM: linux/amd64
-        MTX_WEBRTCADDITIONALHOSTS: 192.168.1.17
+        MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
       - /dev/video0
-    networks:
-      - kerberos
+    network_mode: host
     ports:
-      - 8554:8554
-      - 8890:8890/udp
-      - 1935:1935
-      - 8888:8888
-      - 8889:8889
-      - 9997:9997
+      - "8554:8554"
+      - "1935:1935"
+      - "8888:8888"
+      - "8889:8889"
+      - "8890:8890/udp"
+      - "8189:8189/udp"
     privileged: true
-    environment:
-      UDEV: 1
-      MTX_PROTOCOLS: tcp
-      RTSP_PORT: 8554
-      MTX_PATH: usbcam
     tmpfs:
-      - "/dev/shm"
+      - /dev/shm:rw,exec
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-networks:
-  kerberos:

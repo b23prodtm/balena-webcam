@@ -20,7 +20,8 @@ data:
     - AGENT_USERNAME: "root"
     - AGENT_PASSWORD: "root"
     - MTX_WEBRTCADDITIONALHOSTS: "<my-ip>"
-    - MTX_PATH: "usbcam"
+    - MTX_PATH: "webcam"
+
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
     - raspberrypi3

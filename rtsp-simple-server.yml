@@ -113,7 +113,7 @@ authMethods: [basic]
 # Global settings -> RTMP server
 
 # Allow publishing and reading streams with the RTMP protocol.
-rtmp: yes
+rtmp: no
 # Address of the RTMP listener. This is needed only when encryption is "no" or "optional".
 rtmpAddress: :1935
 # Encrypt connections with TLS (RTMPS).
@@ -133,7 +133,7 @@ rtmpServerCert: server.crt
 # Global settings -> HLS server
 
 # Allow reading streams with the HLS protocol.
-hls: yes
+hls: no
 # Address of the HLS listener.
 hlsAddress: :8888
 # Enable TLS/HTTPS on the HLS server.
@@ -189,7 +189,7 @@ hlsDirectory: ''
 # Global settings -> WebRTC server
 
 # Allow publishing and reading streams with the WebRTC protocol.
-webrtc: yes
+webrtc: no
 # Address of the WebRTC HTTP listener.
 webrtcAddress: :8889
 # Enable TLS/HTTPS on the WebRTC server.
@@ -237,7 +237,7 @@ webrtcICEServers2: []
 # Global settings -> SRT server
 
 # Allow publishing and reading streams with the SRT protocol.
-srt: yes
+srt: no
 # Address of the SRT listener.
 srtAddress: :8890
 
@@ -555,11 +555,11 @@ paths:
   # example:
   # my_camera:
   #   source: rtsp://my_camera
-  usbcam:
-    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://videosurveillance:$RTSP_PORT/$MTX_PATH
+  webcam:
+    runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH
     runOnInitRestart: yes
-  rpicam:
-    source: rpiCamera
+  #rpicam:
+    #source: rpiCamera
     # ID of the camera
     #rpiCameraCamID: 0
 
@@ -623,7 +623,7 @@ paths:
     #rpiCameraMode:
 
     # frames per second
-    #rpiCameraFPS: 30
+    # rpiCameraFPS: 3
 
     # period between IDR frames
     #rpiCameraIDRPeriod: 60
