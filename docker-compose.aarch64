@@ -32,23 +32,18 @@ services:
         TARGETPLATFORM: linux/arm64
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
-    network_mode: host
     devices:
       - /dev/video0
     networks:
       - kerberos
     ports:
-      - 8554:8554
-      - 8000:8000
-      - 8001:8001
-      - 8002:8002
-      - 8003:8003
+      - "8554:8554"
+      - "1935:1935"
+      - "8888:8888"
+      - "8889:8889"
+      - "8890:8890/udp"
+      - "8189:8189/udp"
     privileged: true
-    environment:
-      UDEV: 1
-      MTX_PROTOCOLS: tcp,udp,multicast
-      RTSP_PORT: 8554
-      MTX_PATH: rpicam
     tmpfs:
       - "/dev/shm:exec"
 volumes:
