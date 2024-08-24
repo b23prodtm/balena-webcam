@@ -6,9 +6,9 @@ FROM balenalib/raspberrypi3-64-debian-node:latest-bullseye
 
 ENV TARGETPLATFORM ${TARGETPLATFORM:-linux/arm64}
 ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.local'}
-ENV MTX_PROTOCOLS tcp
+ENV MTX_PROTOCOLS 'tcp'
 ENV RTSP_PORT ${RTSP_PORT:-'8554'}
-ENV MTX_PATH rpicam
+ENV MTX_PATH 'rpicam'
 ENV UDEV 1
 # RUN [ "cross-build-start" ]
 
