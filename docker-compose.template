@@ -44,7 +44,7 @@ services:
       - "8189:8189/udp"
     privileged: true
     tmpfs:
-      - /dev/shm:rw,nosuid,nodev,exec,relatime,size=65536k
+      - /dev/shm:rw,exec
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
