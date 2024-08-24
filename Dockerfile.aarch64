@@ -25,4 +25,4 @@ COPY rtsp-simple-server.yml /mediamtx.yml
 RUN chmod +x /mediamtx
 # RUN [ "cross-build-end" ]
 
-RUN --mount=type=tmpfs,destination=/dev/shm,tmpfs-mode=1770 /mediamtx
+RUN --mount=type=tmpfs,destination=/dev/shm /mediamtx
