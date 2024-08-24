@@ -26,9 +26,9 @@ services:
     image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
     build:
       context: .
-      dockerfile: Dockerfile.aarch64
+      dockerfile: Dockerfile.armhf
       args:
-        TARGETPLATFORM: linux/arm64
+        TARGETPLATFORM: linux/arm
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
