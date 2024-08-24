@@ -1,4 +1,4 @@
-version: '2.5'
+version: '2.1'
 services:
   agent: # https://github.com/kerberos-io/balena-agent
     image: bh.cr/kerberos_io/agent    
