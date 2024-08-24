@@ -30,7 +30,7 @@ services:
       dockerfile: Dockerfile.template
       args:
         TARGETPLATFORM: %%TARGETPLATFORM%%
-        MTX_WEBRTCADDITIONALHOSTS: 192.168.1.28
+        MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
     restart: "always"
     devices:
       - /dev/video0
@@ -44,7 +44,7 @@ services:
       - "8189:8189/udp"
     privileged: true
     tmpfs:
-      - "/dev/shm:exec"
+      - /dev/shm:rw,nosuid,nodev,exec,relatime,size=65536k
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:

@@ -24,18 +24,17 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   webcam:
-    image: betothreeprod/webcam-stream:latest-ffmpeg
+    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
     build:
       context: .
-      dockerfile: Dockerfile.x86_64
+      dockerfile: Dockerfile.aarch64
       args:
-        TARGETPLATFORM: linux/amd64
+        TARGETPLATFORM: linux/arm64
         MTX_WEBRTCADDITIONALHOSTS: 192.168.1.28
     restart: "always"
     devices:
       - /dev/video0
-    networks:
-      - kerberos
+    network_mode: host
     ports:
       - "8554:8554"
       - "1935:1935"
@@ -52,4 +51,3 @@ volumes:
   kerberosagent_config:
 networks:
   kerberos:
-    external: true
