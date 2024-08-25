@@ -1,9 +1,8 @@
 version: '2.1'
 services:
   agent: # https://github.com/kerberos-io/balena-agent
-    image: bh.cr/kerberos_io/agent    
-    networks:
-      - kerberos
+    image: bh.cr/kerberos_io/agent        
+    network_mode: host
     ports:
       - "80:80"
     tty: true
@@ -18,8 +17,6 @@ services:
       - "kerberosagent_config:/home/agent/data/config:rw"
   hostname: # https://github.com/balenablocks/hostname
     image: balenablocks/hostname:latest
-    networks:
-      - kerberos
     restart: "no"
     labels:
       io.balena.features.supervisor-api: '1'
@@ -30,13 +27,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.x86_64
-      args:
-        TARGETPLATFORM: linux/amd64
-        MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
-        MEDIAMTX_FILE: rtsp-simple-server.yml
-    environment: 
-        MTX_PATH: webcam
-        RTSP_PORT: 8554
     restart: "always"
     devices:
       - /dev/video0
@@ -55,6 +45,3 @@ volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-networks:
-  kerberos:
-    external: true
