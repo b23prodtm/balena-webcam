@@ -1,17 +1,18 @@
 ARG TARGETPLATFORM
 ARG MTX_WEBRTCADDITIONALHOSTS
 ARG MEDIAMTX_FILE
+ARG MTX_PATH
+ARG RTSP_PORT
 FROM bluenviron/mediamtx:latest-ffmpeg-rpi as MTX_BASE
 FROM balenalib/raspberrypi3-64-debian-node:latest-bullseye
 #FROM balenalib/raspberrypi3-64-alpine-node:latest-edge
-# Platform configuration
+# App settings
 ENV TARGETPLATFORM ${TARGETPLATFORM:-linux/arm64}
 ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.local'}
 ENV MEDIAMTX_FILE ${MEDIAMTX_FILE:-'rtsp-simple-server.yml'}
-# App settings and defaults
 ENV RTSP_PORT ${RTSP_PORT:-'8554'}
 ENV MTX_PATH ${MTX_PATH:-'rpicamera'}
-# Build parameters
+# App build parameters
 ENV MTX_PROTOCOLS 'tcp'
 ENV UDEV 1
 ENV DOCKER_BUILDKIT 1
