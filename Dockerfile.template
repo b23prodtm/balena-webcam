@@ -1,12 +1,12 @@
-# App settings
-ARG TARGETPLATFORM ${TARGETPLATFORM:-'%%TARGETPLATFORM%%'}
-ARG MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.local'}
-ARG MEDIAMTX_FILE ${MEDIAMTX_FILE:-'rtsp-simple-server.yml'}
-ARG RTSP_PORT ${RTSP_PORT:-'8554'}
-ARG MTX_PATH ${MTX_PATH:-'rpicamera'}
 FROM bluenviron/mediamtx:%%IMG_TAG%% as MTX_BASE
 FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:latest-bullseye
 #FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-node:latest-edge
+# App settings
+ENV TARGETPLATFORM ${TARGETPLATFORM:-'%%TARGETPLATFORM%%'}
+ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.local'}
+ENV MEDIAMTX_FILE ${MEDIAMTX_FILE:-'rtsp-simple-server.yml'}
+ENV RTSP_PORT ${RTSP_PORT:-'8554'}
+ENV MTX_PATH ${MTX_PATH:-'webcam'}
 # App build parameters
 ENV MTX_PROTOCOLS 'tcp'
 ENV UDEV 1
