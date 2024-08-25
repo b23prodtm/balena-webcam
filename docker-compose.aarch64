@@ -2,7 +2,8 @@ version: '2.1'
 services:
   agent: # https://github.com/kerberos-io/balena-agent
     image: bh.cr/kerberos_io/agent    
-    networks: kerberos
+    networks:
+      - kerberos
     network_mode: host
     ports:
       - "80:80"
@@ -18,7 +19,8 @@ services:
       - "kerberosagent_config:/home/agent/data/config:rw"
   hostname: # https://github.com/balenablocks/hostname
     image: balenablocks/hostname:latest
-    networks: kerberos
+    networks:
+      - kerberos
     restart: "no"
     labels:
       io.balena.features.supervisor-api: '1'
@@ -39,7 +41,8 @@ services:
     restart: "always"
     devices:
       - /dev/video0
-    networks: kerberos
+    networks:
+      - kerberos
     network_mode: host
     ports:
       - "8554:8554"
