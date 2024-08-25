@@ -30,7 +30,7 @@ services:
       args:
         TARGETPLATFORM: %%TARGETPLATFORM%%
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
-        MEDIAMTX_FILE=rtsp-simple-server.yml
+        MEDIAMTX_FILE: rtsp-simple-server.yml
     restart: "always"
     devices:
       - /dev/video0
