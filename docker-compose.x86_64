@@ -31,6 +31,9 @@ services:
         TARGETPLATFORM: linux/amd64
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
         MEDIAMTX_FILE: rtsp-simple-server.yml
+    environment: 
+        MTX_PATH: rpicamera
+        RTSP_PORT: 8554
     restart: "always"
     devices:
       - /dev/video0
