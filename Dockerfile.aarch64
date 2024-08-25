@@ -1,15 +1,18 @@
 ARG TARGETPLATFORM
 ARG MTX_WEBRTCADDITIONALHOSTS
-ARG RTSP_PORT
+ARG MEDIAMTX_FILE
 FROM bluenviron/mediamtx:latest-ffmpeg-rpi as MTX_BASE
 FROM balenalib/raspberrypi3-64-debian-node:latest-bullseye
 #FROM balenalib/raspberrypi3-64-alpine-node:latest-edge
-
+# Platform configuration
 ENV TARGETPLATFORM ${TARGETPLATFORM:-linux/arm64}
 ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.local'}
-ENV MTX_PROTOCOLS 'tcp'
+ENV MEDIAMTX_FILE ${MEDIAMTX_FILE:-'rtsp-simple-server.yml'}
+# App settings and defaults
 ENV RTSP_PORT ${RTSP_PORT:-'8554'}
-ENV MTX_PATH 'rpicamera'
+ENV MTX_PATH ${MTX_PATH:-'rpicamera'}
+# Build parameters
+ENV MTX_PROTOCOLS 'tcp'
 ENV UDEV 1
 ENV DOCKER_BUILDKIT 1
 # RUN [ "cross-build-start" ]
@@ -22,13 +25,13 @@ WORKDIR /
 # TODO: the deploy-to-fleet function should allow submodule checkout
 #COPY $TARGETPLATFORM/. /
 COPY --from=MTX_BASE /mediamtx /
-COPY rtsp-simple-server.yml /
-COPY rtsp-simple-server-rpi.yml /
+COPY rtsp-simple-server.template /
+COPY rtsp-simple-server-rpi.template /
 COPY config_mtx.sh /
 RUN chmod +x /config_mtx.sh && /config_mtx.sh "$MTX_PATH"
 RUN chmod +x /mediamtx
 # RUN [ "cross-build-end" ]
 
-# TODO: Requires BuildKit
+# TODO: Requires BuildKit to get true rw,exec shared memory
 #RUN --mount=type=tmpfs,destination=/dev/shm,tmpfs-mode=1770 /mediamtx
 ENTRYPOINT [ "/mediamtx" ]
