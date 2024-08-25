@@ -8,7 +8,7 @@ FROM balenalib/intel-nuc-debian-node:latest-bullseye
 
 ENV TARGETPLATFORM ${TARGETPLATFORM:-linux/amd64}
 ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.local'}
-ENV MEDIAMTX_FILE ${MEDIAMTX_FILE:-"rtsp-simple-server.yml"}
+ENV MEDIAMTX_FILE ${MEDIAMTX_FILE:-'rtsp-simple-server.yml'}
 ENV MTX_PROTOCOLS 'tcp'
 ENV RTSP_PORT ${RTSP_PORT:-'8554'}
 ENV MTX_PATH 'rpicamera'
