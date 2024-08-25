@@ -4,7 +4,6 @@ services:
     image: bh.cr/kerberos_io/agent    
     networks:
       - kerberos
-    network_mode: host
     ports:
       - "80:80"
     tty: true
@@ -43,7 +42,6 @@ services:
       - /dev/video0
     networks:
       - kerberos
-    network_mode: host
     ports:
       - "8554:8554"
       - "1935:1935"
