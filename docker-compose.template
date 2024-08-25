@@ -10,7 +10,7 @@ services:
     environment:
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
-      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://videosurveillance.local:8554/rpicamera
+      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://videosurveillance.local:8554/webcam
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings:rw"
       - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
@@ -32,7 +32,7 @@ services:
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
         MEDIAMTX_FILE: rtsp-simple-server.yml
     environment: 
-        MTX_PATH: rpicamera
+        MTX_PATH: webcam
         RTSP_PORT: 8554
     restart: "always"
     devices:
