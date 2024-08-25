@@ -27,12 +27,12 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   webcam:
-    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
+    image: betothreeprod/webcam-stream:latest-ffmpeg
     build:
       context: .
-      dockerfile: Dockerfile.aarch64
+      dockerfile: Dockerfile.x86_64
       args:
-        TARGETPLATFORM: linux/arm64
+        TARGETPLATFORM: linux/amd64
         MTX_WEBRTCADDITIONALHOSTS: videosurveillance.local
         MEDIAMTX_FILE: rtsp-simple-server.yml
     environment: 
