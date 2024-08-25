@@ -558,7 +558,7 @@ paths:
   webcam:
     runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH
     runOnInitRestart: yes
-  #rpicam:
+  #rpicamera:
     #source: rpiCamera
     # ID of the camera
     #rpiCameraCamID: 0
