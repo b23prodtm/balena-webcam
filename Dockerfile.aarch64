@@ -10,7 +10,7 @@ ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.lo
 ENV MEDIAMTX_FILE ${MEDIAMTX_FILE:-'rtsp-simple-server.yml'}
 # App settings and defaults
 ENV RTSP_PORT ${RTSP_PORT:-'8554'}
-ENV MTX_PATH ${MTX_FILE:-'rpicamera'}
+ENV MTX_PATH ${MTX_PATH:-'rpicamera'}
 # Build parameters
 ENV MTX_PROTOCOLS 'tcp'
 ENV UDEV 1
