@@ -25,9 +25,8 @@ COPY rtsp-simple-server.template /
 COPY rtsp-simple-server-rpi.template /
 COPY config_mtx.sh /
 RUN chmod +x /config_mtx.sh && /config_mtx.sh "$MTX_PATH"
-RUN chmod +x /mediamtx
+RUN chmod a+x /mediamtx
+COPY entrypoint.sh /
+RUN chmod a+x entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
 #RUN [ "cross-build-end" ]
-
-# TODO: Requires BuildKit to get true rw,exec shared memory
-#RUN --mount=type=tmpfs,destination=/dev/shm,tmpfs-mode=1770 /mediamtx
-ENTRYPOINT [ "/mediamtx" ]
