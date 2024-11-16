@@ -10,9 +10,9 @@ else
 fi
 if [ -z "${SHM_SIZE}" ]; then
     echo "Calculating the SHM_SIZE value as 30% of Total Memory"
-    SHM_SIZE=$(free -m | awk '/^Mem/ {printf "%.0fG",0.3*$2/1024}')
+    SHM_SIZE="$(free -m | awk '/^Mem/ {printf "%.0fG",0.3*$2/1024}’)"
 fi
 
-echo "Remounting shm with size ${SHM_SIZE} ..."
-mount -o remount,rw,exec,size=${SHM_SIZE} /dev/shm
-echo "Remounting shm with size ${SHM_SIZE} ...DONE"
+printf "Remounting shm with size %s ..." "${SHM_SIZE}"
+mount -o remount,rw,exec,size="${SHM_SIZE}" /dev/shm
+echo "Remounting shm with size %s ...DONE" "${SHM_SIZE}"
