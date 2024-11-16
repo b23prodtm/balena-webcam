@@ -15,4 +15,4 @@ fi
 
 printf "Remounting shm with size %s ..." "${SHM_SIZE}"
 mount -o remount,rw,exec,size="${SHM_SIZE}" /dev/shm
-echo "Remounting shm with size %s ...DONE" "${SHM_SIZE}"
+printf "Remounting shm with size %s ...DONE" "${SHM_SIZE}"
