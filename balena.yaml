@@ -19,10 +19,9 @@ data:
     - AGENT_MODE: "release"
     - AGENT_USERNAME: "root"
     - AGENT_PASSWORD: "root"
-    - MTX_WEBRTCADDITIONALHOSTS: "<my-ip>"
+    - MTX_PORT: "8554"
     - MTX_PATH: "webcam"
-    - AGENT_CAPTURE_IPCAMERA_RTSP: "rtsp://<my-ip>:8554/webcam"
-
+    - AGENT_CAPTURE_IPCAMERA_RTSP: "rtsp://localhost:8554/webcam"
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
     - raspberrypi3

@@ -30,7 +30,7 @@ Currently only H264 RTSP streams are supported from mediamtx sidecar container
 ## Node Package Manager
 
   This project depends on npmjs [balena-cloud-apps](https://www.npmjs.com/package/balena-cloud-apps). Please call
-  `npm link balena-cloud-apps && npm update`
+  `npm install balena-cloud-apps && npm update`
   whenever the system complains about `balena_deploy` not found.
 After npm install succeeded, HuewizPi can be dbuilt and optionally deployed to the device
 
