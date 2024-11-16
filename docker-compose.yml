@@ -23,12 +23,10 @@ services:
     environment:
       SET_HOSTNAME: videosurveillance
   webcam:
-    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
+    image: betothreeprod/webcam-stream:latest-ffmpeg
     build:
       context: .
-      dockerfile: Dockerfile.aarch64
-    sysctls:
-      - fs.protected_regular=0
+      dockerfile: Dockerfile.x86_64
     restart: "always"
     devices:
       - /dev/video0

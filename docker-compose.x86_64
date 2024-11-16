@@ -27,8 +27,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.x86_64
-    sysctls:
-      - fs.protected_regular=0
     restart: "always"
     devices:
       - /dev/video0
