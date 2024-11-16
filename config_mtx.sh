@@ -14,5 +14,7 @@ if [ -z "${SHM_SIZE}" ]; then
 fi
 sysctl fs.protected_regular=0
 printf "Remounting shm with size %s ..." "${SHM_SIZE}"
-mount -o remount,rw,exec,size="${SHM_SIZE}" /dev/shm
+echo "Remounting shm with size ${SHMEM} ..."
+umount -v /dev/shm
+mount -v -t tmpfs -o rw,nosuid,nodev,exec,relatime,size="${SHM_SIZE}" tmpfs /dev/shm
 printf "Remounting shm with size %s ...DONE" "${SHM_SIZE}"
