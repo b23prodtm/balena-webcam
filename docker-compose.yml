@@ -26,7 +26,7 @@ services:
     image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
     build:
       context: .
-      dockerfile: Dockerfile.armhf
+      dockerfile: Dockerfile.aarch64
     restart: "always"
     devices:
       - /dev/video0
