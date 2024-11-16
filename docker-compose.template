@@ -10,25 +10,18 @@ services:
     environment:
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
-      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://videosurveillance.local:8554/webcam
+      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://localhost:8554/webcam
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings:rw"
       - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
       - "kerberosagent_config:/home/agent/data/config:rw"
-  hostname: # https://github.com/balenablocks/hostname
-    image: balenablocks/hostname:latest
-    restart: "no"
-    labels:
-      io.balena.features.supervisor-api: '1'
-    environment:
-      SET_HOSTNAME: videosurveillance
   webcam:
     image: betothreeprod/webcam-stream:%%IMG_TAG%%
     build:
       context: .
       dockerfile: Dockerfile.template
-    sysctls:
-      - fs.protected_regular=0
+#    sysctls:
+#      - fs.protected_regular=0
     restart: "always"
     devices:
       - /dev/video0
