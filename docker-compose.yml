@@ -39,8 +39,6 @@ services:
       - "8890:8890/udp"
       - "8189:8189/udp"
     privileged: true
-    tmpfs:
-      - /dev/shm:rw,exec
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
