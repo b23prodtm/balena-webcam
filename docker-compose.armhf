@@ -41,6 +41,8 @@ services:
       - "8890:8890/udp"
       - "8189:8189/udp"
     privileged: true
+    environment:
+      RTSP_IPV4: 192.168.1.28
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
