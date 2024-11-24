@@ -24,8 +24,10 @@ services:
 #      - fs.protected_regular=0
     restart: "always"
     devices:
+      - /dev/vchiq:/dev/vchiq
       - /dev/video0:/dev/video0 
     environment:
+      LD_LIBRARY_PATH: /opt/vc/lib
       MTX_PATHS_CAM_SOURCE: rpiCamera
     network_mode: host
     ports:
@@ -36,7 +38,10 @@ services:
       - "8890:8890/udp"
       - "8189:8189/udp"
     privileged: true
+    volumes:
+      - "openvc:/opt/vc"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
+  openvc:

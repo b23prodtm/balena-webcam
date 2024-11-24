@@ -12,3 +12,4 @@ else
     fi
     cp -fv rtsp-simple-server-"$MTX_PATH".template "$MEDIAMTX_FILE"
 fi
+

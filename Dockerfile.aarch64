@@ -10,7 +10,7 @@ ENV MTX_PATH ${MTX_PATH:-cam}
 # App build parameters
 ENV MTX_PROTOCOLS 'tcp'
 ENV UDEV 1
-# RUN [ "cross-build-start" ]
+#RUN [ "cross-build-start" ]
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg
@@ -23,9 +23,10 @@ COPY --from=MTX_BASE /mediamtx /
 COPY rtsp-simple-server-cam.template /
 COPY rtsp-simple-server-webcam.template /
 COPY config_mtx.sh /
+COPY etc/udev/rules.d/. /etc/udev/rules.d/
 RUN chmod +x /config_mtx.sh && /config_mtx.sh "$MTX_PATH"
 RUN chmod a+x /mediamtx
 COPY entrypoint.sh /
 RUN chmod a+x entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]
-# RUN [ "cross-build-end" ]
+#RUN [ "cross-build-end" ]
