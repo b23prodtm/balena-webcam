@@ -16,10 +16,10 @@ services:
       - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
       - "kerberosagent_config:/home/agent/data/config:rw"
   webcam:
-    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
+    image: betothreeprod/webcam-stream:latest-ffmpeg
     build:
       context: .
-      dockerfile: Dockerfile.armhf
+      dockerfile: Dockerfile.x86_64
 #    sysctls:
 #      - fs.protected_regular=0
     restart: "always"
