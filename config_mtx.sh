@@ -8,7 +8,7 @@ else
     if [ ! -v "$1" ]; then      
       printf "[$0]: Used %s as the default stream.\n" "$MTX_PATH"
     else
-      export MTX_PATH=$1
+      export MTX_PATH="$1"
     fi
     cp -fv rtsp-simple-server-"$MTX_PATH".template "$MEDIAMTX_FILE"
 fi
