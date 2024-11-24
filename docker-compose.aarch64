@@ -1,0 +1,47 @@
+version: '2.1'
+services:
+  agent: # https://github.com/kerberos-io/balena-agent
+    image: bh.cr/kerberos_io/agent        
+    network_mode: host
+    ports:
+      - "80:80"
+    tty: true
+    restart: "always"
+    environment:
+      AGENT_USERNAME: root
+      AGENT_PASSWORD: root
+      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://localhost:8554/%%MTX_PATH%%
+    volumes:
+      - "kerberosagent_recordings:/home/agent/data/recordings:rw"
+      - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
+      - "kerberosagent_config:/home/agent/data/config:rw"
+  webcam:
+    image: betothreeprod/webcam-stream:%%IMG_TAG%%
+    build:
+      context: .
+      dockerfile: Dockerfile.template
+#    sysctls:
+#      - fs.protected_regular=0
+    restart: "always"
+    devices:
+      - /dev/vchiq:/dev/vchiq
+      - /dev/video0:/dev/video0 
+    environment:
+      LD_LIBRARY_PATH: /opt/vc/lib
+      MTX_PATHS_CAM_SOURCE: rpiCamera
+    network_mode: host
+    ports:
+      - "8554:8554"
+      - "1935:1935"
+      - "8888:8888"
+      - "8889:8889"
+      - "8890:8890/udp"
+      - "8189:8189/udp"
+    privileged: true
+    volumes:
+      - "/opt/vc:/opt/vc"
+volumes:
+  kerberosagent_recordings:
+  kerberosagent_snapshots:
+  kerberosagent_config:
+  /opt/vc:
