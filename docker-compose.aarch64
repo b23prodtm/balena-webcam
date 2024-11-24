@@ -10,16 +10,16 @@ services:
     environment:
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
-      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://localhost:8554/%%MTX_PATH%%
+      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://localhost:8554/cam
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings:rw"
       - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
       - "kerberosagent_config:/home/agent/data/config:rw"
   webcam:
-    image: betothreeprod/webcam-stream:%%IMG_TAG%%
+    image: betothreeprod/webcam-stream:latest-ffmpeg-rpi
     build:
       context: .
-      dockerfile: Dockerfile.template
+      dockerfile: Dockerfile.aarch64
 #    sysctls:
 #      - fs.protected_regular=0
     restart: "always"
