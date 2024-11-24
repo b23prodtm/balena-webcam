@@ -24,7 +24,9 @@ services:
 #      - fs.protected_regular=0
     restart: "always"
     devices:
-      - /dev/video0
+      - /dev/video0:/dev/video0 
+    environment:
+      MTX_PATHS_CAM_SOURCE: rpiCamera
     network_mode: host
     ports:
       - "8554:8554"
