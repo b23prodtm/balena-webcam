@@ -1,6 +1,6 @@
-FROM bluenviron/mediamtx:latest-ffmpeg as MTX_BASE
-FROM balenalib/raspberrypi3-debian-node:latest-bullseye
-#FROM balenalib/raspberrypi3-alpine-node:latest-edge
+FROM bluenviron/mediamtx:latest-ffmpeg-rpi as MTX_BASE
+FROM balenalib/raspberrypi3-64-debian-node:latest-bullseye
+#FROM balenalib/raspberrypi3-64-alpine-node:latest-edge
 # App settings
 ENV TARGETPLATFORM ${TARGETPLATFORM:-linux/arm64}
 ENV MTX_WEBRTCADDITIONALHOSTS ${MTX_WEBRTCADDITIONALHOSTS:-'videosurveillance.local'}
