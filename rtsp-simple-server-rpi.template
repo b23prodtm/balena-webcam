@@ -555,10 +555,11 @@ paths:
   # example:
   # my_camera:
   #   source: rtsp://my_camera
-  #webcam:
+  #cam:
   #  runOnInit: ffmpeg -f v4l2 -i /dev/video0 -preset ultrafast -c:v libx264 -x264-params keyint=60:scenecut=0 -f rtsp rtsp://localhost:$RTSP_PORT/$MTX_PATH
   #  runOnInitRestart: yes
-  rpicamera:
+  # As described in MediaMTX https://github.com/kbtxwer/rtsp-simple-server?tab=readme-ov-file#raspberry-pi-cameras 
+  cam:
     source: rpiCamera
     # ID of the camera
     #rpiCameraCamID: 0
