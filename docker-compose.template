@@ -39,9 +39,9 @@ services:
       - "8189:8189/udp"
     privileged: true
     volumes:
-      - "/opt/vc:/opt/vc"
+      - "openvc:/opt/vc"
 volumes:
   kerberosagent_recordings:
   kerberosagent_snapshots:
   kerberosagent_config:
-  /opt/vc:
+  openvc:
