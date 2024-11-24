@@ -9,7 +9,7 @@ else
   fi
   printf "Delete branch %s\n" "fix/issue-$1"
   sleep 1
-  if [ "$(git branch -D fix/issue-$1 > /dev/null)" ]; then
+  if [ "$(git branch -D fix/issue-"$1" > /dev/null)" ]; then
     echo "Branch was deleted !"
   fi
   printf "Pulling recent changes...\n"
