@@ -10,7 +10,7 @@ services:
     environment:
       AGENT_USERNAME: root
       AGENT_PASSWORD: root
-      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://localhost:8554/webcam
+      AGENT_CAPTURE_IPCAMERA_RTSP: rtsp://localhost:8554/cam
     volumes:
       - "kerberosagent_recordings:/home/agent/data/recordings:rw"
       - "kerberosagent_snapshots:/home/agent/data/snapshots:rw"
@@ -24,7 +24,9 @@ services:
 #      - fs.protected_regular=0
     restart: "always"
     devices:
-      - /dev/video0
+      - /dev/video0:/dev/video0 
+    environment:
+      MTX_PATHS_CAM_SOURCE: rpiCamera
     network_mode: host
     ports:
       - "8554:8554"
