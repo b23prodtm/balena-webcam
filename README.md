@@ -77,8 +77,8 @@ Once your device joins the fleet you'll need to allow some time for it to downlo
 3. Go to the configuration page and fill-in the RTSP url of your IPCamera.
 4. Press save, and the Kerberos Agent will connect to your camera, and show a live view on the dashboard page.
 
-Set MTX_PATH environment:
-  - (default value) "webcam": environment to set the source as the USB WebCam (/dev/video0)
+Set MTX_PATH environment default value in common.env :
   - "cam": binary server will use configuration file for RPI Camera (it must be connected to the Raspberry Pi camera socket
+  - "webcam": environment to set the source as the USB WebCam (/dev/video0)
 
 Documentation for the Kerberos Agent and other services can be found at [`https://doc.kerberos.io/`](https://doc.kerberos.io/)
