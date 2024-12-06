@@ -21,7 +21,8 @@ data:
     - AGENT_PASSWORD: "root"
     - MTX_PORT: "8554"
     - MTX_PATH: "cam"
-    - MTX_PATHS_CAM_SOURCE: "rpiCamera"
+    - BALENA_HOST_CONFIG_start_x: "1"
+    - BALENA_HOST_CONFIG_gpu_mem: "128"
     - AGENT_CAPTURE_IPCAMERA_RTSP: "rtsp://localhost:8554/cam"
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
