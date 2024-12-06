@@ -21,8 +21,6 @@ Application environment variables apply to all services within the application, 
 | -------------- | --------------------------------------------- |
 | `SET_HOSTNAME` | Set a custom hostname on application start. Default is `videosurveillance`. |
 | `MTX_WEBRTCADDITIONALHOSTS` | Specify the hostname network IP address to publish the stream to |
-| `MTX_PATH` | cam or webcam as defined in YAML RTSP-configuration | 
-| `SHM_SIZE`| 10G (=10 Gigabytes) Specify Shared Memory Usage |
 | `BALENA_HOST_CONFIG_gpu_mem`| 128 * |
 | `BALENA_HOST_CONFIG_start_x` | 1 * |
 
